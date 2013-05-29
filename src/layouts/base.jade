@@ -1,20 +1,35 @@
+//- Mixin for post, used on homepage and post page
+mixin postHead(post)
+  .post-head.group
+    a(href="/#{post.url}")
+      h1.post-title= post.title
+    h2.post-date= [post.date.getUTCFullYear(), post.date.getMonth() + 1, post.date.getDay()].join(' · ')
+
+mixin post(post)
+  mixin postHead(post)
+  .post-body!= post.content
+
 doctype 5
 html
   head
-    title= "My Blog"
     meta(charset="utf8")
     meta(name="viewport", content="width=device-width")
     link(href="/styles/main.css", rel="stylesheet")
-    link(href="/styles/tomorrow-night-bright.css", rel="stylesheet")
     block title
+      title= "My Blog"
   body
-    block header
-      ul
+    .nav
+      h1.name
+        a(href="/") My Name
+      ul.nav-links
         li
-          a(href="/blog") Blog
+          a(href="/archives.html") archives
         li
-          a(href="/") Home
-    block content
-    block footer
+          a(href="https://github.com/") github
+        li
+          a(href="https://twitter.com/") twitter
+
+    .content
+      block content
     //- this needs to be conditionally included based on envirnoment
     script(src="http://localhost:35729/livereload.js")
