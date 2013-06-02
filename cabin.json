@@ -1,0 +1,10 @@
+{
+  "style": [
+    "CSS",
+    "Sass"
+  ],
+  "template": [
+    "Jade",
+    "EJS"
+  ]
+}
