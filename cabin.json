@@ -6,5 +6,22 @@
   "template": [
     "Jade",
     "EJS"
-  ]
+  ],
+    "pages": {
+      "options": {
+        "pageSrc": "src/pages"
+      },
+      "gruntPages": {
+        "src": "posts",
+        "dest": "site",
+        "layout": "src/layouts/post.<%= templateLang %>",
+        "url": "blog/posts/:title",
+        "options": {
+          "pagination": {
+            "postsPerPage": 3,
+            "listPage": "src/pages/index.<%= templateLang %>"
+          }
+        }
+      }
+    }
 }
