@@ -58,6 +58,16 @@ a {
     width: 86%;
   }
 }
+.cabin {
+  position: fixed;
+  right: .5em;
+  bottom: .5em;
+  width: 1.6em;
+  opacity: .2;
+  &:hover {
+    opacity: .4;
+  }
+}
 
 @mixin clearfix {
   &:after {
