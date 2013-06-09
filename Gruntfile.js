@@ -26,7 +26,7 @@ module.exports = function (grunt) {
       },
       posts: {
         src: 'posts',
-        dest: 'site',
+	dest: 'dist',
         layout: 'src/layouts/post.jade',
         url: 'blog/posts/:title',
         options: {
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         options: {
           middleware: function (connect) {
             return [
-              mountFolder(connect, 'site'),
+	      mountFolder(connect, 'dist'),
               mountFolder(connect, 'src')
             ];
           }
@@ -59,12 +59,12 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      server: 'site'
+      server: 'dist'
     },
     compass: {
       options: {
         sassDir: 'src/styles',
-        cssDir: 'site/styles',
+	cssDir: 'dist/styles',
         imagesDir: 'src/images',
         relativeAssets: true
       },
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'src',
-          dest: 'site',
+	  dest: 'dist',
           src: [
             '*.{ico,txt}',
             '.htaccess',
