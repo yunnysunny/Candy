@@ -19,17 +19,26 @@ html
     block title
       title= "My Blog"
   body
-    .nav
+    .nav#nav
       h1.name
         a(href="/") My Name
       ul.nav-links
+	li.menu-in.menu
+	  a(href="#nav").icon-menu
+	li.menu-out.menu
+	  a(href="#").icon-menu
         li
-          a(href="/archives.html") archives
+	  a(href="/about.html") about
         li
-          a(href="https://github.com/") github
+	  a(href="/projects.html") projects
         li
-          a(href="https://twitter.com/") twitter
+	  a(href="/archives.html") archives
+
+      .social-media
+	a.icon-github(href="https://github.com/")
+	a.icon-twitter(href="https://twitter.com/")
+	a.icon-mail(href="https://twitter.com/")
 
     .content
       block content
-  img.cabin(src="./images/cabin.png")
+  img.cabin(src="/images/cabin.png")

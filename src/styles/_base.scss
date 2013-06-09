@@ -3,7 +3,7 @@ $offBlack: hsl(10, 1%, 22%);
 
 $codeFont: Monaco, Consolas, monospace;
 $postFont: 'Merriweather', serif;
-$headerFont: futura, sans-serif;
+$headerFont: 'Open Sans', sans-serif;
 
 $mainTheme: $green;
 $mainFont: $offBlack;
@@ -58,6 +58,7 @@ a {
     width: 86%;
   }
 }
+
 .cabin {
   position: fixed;
   right: .5em;
