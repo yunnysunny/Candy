@@ -39,6 +39,10 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: $mainFont;
   @include transition(color 0.2s);
