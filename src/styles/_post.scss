@@ -51,6 +51,7 @@ code {
 
 pre {
   font-family: $codeFont;
+  overflow: auto;
 }
 
 .highlight {
