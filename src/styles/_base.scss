@@ -43,6 +43,11 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
 a {
   color: $mainFont;
   @include transition(color 0.2s);
