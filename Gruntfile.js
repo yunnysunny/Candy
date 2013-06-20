@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         hostname: 'localhost',
           middleware: function (connect) {
             return [
-              mountFolder(connect, 'dist'),
+              mountFolder(connect, 'site'),
               mountFolder(connect, 'src')
             ];
           }
@@ -50,12 +50,12 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      dist: 'dist'
+      dist: 'site'
     },
     compass: {
       options: {
         sassDir: 'src/styles',
-        cssDir: 'dist/styles'
+        cssDir: 'site/styles'
       },
       dist: {}
     },
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'src',
-          dest: 'dist',
+          dest: 'site',
           src: [
             '*.ico',
             '.htaccess',
