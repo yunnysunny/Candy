@@ -3,7 +3,8 @@
     "Sass"
   ],
   "template": [
-    "Jade"
+    "Jade",
+    "EJS"
   ],
   "gruntPages": {
     "options": {
