@@ -37,19 +37,19 @@ body {
   }
 }
 
-a {
-  color: $offBlack;
-  @include transition(color 0.2s);
-
-  &:hover {
-    color: darken($mainTheme, 10);
-  }
-}
-
 .content {
   margin: 0 auto;
   max-width: 680px;
   width: 55%;
+
+  a {
+    color: $offBlack;
+    @include transition(color 0.2s);
+
+    &:hover {
+      color: darken($mainTheme, 10);
+    }
+  }
 
   @include breakpoint(big-phone) {
     margin: 45px auto;
