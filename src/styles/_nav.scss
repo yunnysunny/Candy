@@ -35,13 +35,13 @@
 
 .menu {
   float: right;
-  color: white;
   display: none;
   a:hover {
     text-decoration: none;
-    color: $mainFont;
+    color: $offBlack;
   }
 }
+
 .menu-in {
   @include breakpoint(big-phone) {
     display: block;
@@ -50,9 +50,11 @@
 
 #nav:target {
   overflow: visible;
+
   .menu-in{
     display:none;
   }
+
   .menu-out{
     display: block;
   }
@@ -89,11 +91,13 @@
 
   a {
     margin: 0 10px;
+
     &:hover {
       text-decoration: none;
-      color: $mainFont;
+      color: $offBlack;
     }
   }
+
   @include breakpoint(big-phone) {
     display: none;
   }

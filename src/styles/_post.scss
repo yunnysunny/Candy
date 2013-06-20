@@ -12,10 +12,10 @@
 }
 
 .post-title {
+  float: left;
   padding-right: 4.8em;
   margin: 5px 0;
   font-size: 1.7em;
-  float: left;
 }
 
 .post-date {
@@ -31,11 +31,13 @@
   margin-bottom: 1.2em;
   font-family: $postFont;
   line-height: 1.65em;
+
   img {
     max-width: 100%;
   }
 }
 
+// Inline code element
 p code {
   background: hsl(240, 100%, 96%);
   border: 1px solid hsl(0, 0%, 90%);
