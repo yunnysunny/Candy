@@ -1,11 +1,9 @@
 {
   "style": [
-    "CSS",
     "Sass"
   ],
   "template": [
-    "Jade",
-    "EJS"
+    "Jade"
   ],
   "gruntPages": {
     "options": {
