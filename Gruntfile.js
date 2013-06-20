@@ -5,6 +5,11 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  var gruntPagesConfig = JSON.parse(grunt.template.process(grunt.file.read('cabin.json'), {
+      data: {
+        templateLang: 'jade'
+      }
+    })).gruntPages;
 
   grunt.initConfig({
     watch: {
@@ -18,32 +23,18 @@ module.exports = function (grunt) {
       pages: {
         files: ['src/pages/{,*/}*', 'posts/{,*/}*', 'src/layouts/{,*/}*'],
         tasks: ['pages']
-      }
-    },
-    pages: {
-      options: {
-        pageSrc: 'src/pages'
       },
-      posts: {
-        src: 'posts',
-        dest: 'dist',
-        layout: 'src/layouts/post.jade',
-        url: 'blog/posts/:title',
-        options: {
-          pagination: {
-            postsPerPage: 3,
-            listPage: 'src/pages/index.jade'
-          }
-        }
+      images: {
+        files: ['*.ico', '.htacess', 'src/images/*'],
+        tasks: ['copy']
       }
     },
+    pages: gruntPagesConfig,
     connect: {
-      options: {
-        port: 9000,
-        hostname: 'localhost'
-      },
-      livereload: {
+      dist: {
         options: {
+        port: 9000,
+        hostname: 'localhost',
           middleware: function (connect) {
             return [
               mountFolder(connect, 'dist'),
@@ -54,21 +45,19 @@ module.exports = function (grunt) {
       }
     },
     open: {
-      server: {
+      dist: {
         path: 'http://localhost:9000'
       }
     },
     clean: {
-      server: 'dist'
+      dist: 'dist'
     },
     compass: {
       options: {
         sassDir: 'src/styles',
-        cssDir: 'dist/styles',
-        imagesDir: 'src/images',
-        relativeAssets: true
+        cssDir: 'dist/styles'
       },
-      server: {}
+      dist: {}
     },
     // Move files not handled by other tasks
     copy: {
@@ -77,12 +66,11 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'src',
-        dest: 'dist',
+          dest: 'dist',
           src: [
-            '*.{ico,txt}',
+            '*.ico',
             '.htaccess',
-            'images/{,*/}*',
-            'styles/fonts/{,*/}*'
+            'images/{,*/}*'
           ]
         }]
       }
@@ -90,7 +78,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', [
-    'clean:server',
+    'clean',
     'compass',
     'pages',
     'copy'
@@ -98,7 +86,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('server', [
     'build',
-    'connect:livereload',
+    'connect',
     'open',
     'watch'
   ]);
