@@ -17,15 +17,15 @@ module.exports = function (grunt) {
         livereload: true
       },
       compass: {
-        files: ['src/styles/{,*/}*'],
+        files: ['src/styles/**'],
         tasks: ['compass']
       },
       pages: {
-        files: ['src/pages/{,*/}*', 'posts/{,*/}*', 'src/layouts/{,*/}*'],
+        files: ['src/pages/**', 'posts/**', 'src/layouts/**'],
         tasks: ['pages']
       },
-      images: {
-        files: ['*.ico', '.htacess', 'src/images/*'],
+      copy: {
+        files: ['src/images/**', 'src/styles/**.css', 'src/styles/fonts/**', 'src/scripts/**'],
         tasks: ['copy']
       }
     },
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         hostname: 'localhost',
           middleware: function (connect) {
             return [
-              mountFolder(connect, 'site'),
+              mountFolder(connect, 'dist'),
               mountFolder(connect, 'src')
             ];
           }
@@ -50,12 +50,12 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      dist: 'site'
+      dist: 'dist'
     },
     compass: {
       options: {
         sassDir: 'src/styles',
-        cssDir: 'site/styles'
+        cssDir: 'dist/styles'
       },
       dist: {}
     },
@@ -66,11 +66,12 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'src',
-          dest: 'site',
+          dest: 'dist',
           src: [
-            '*.ico',
-            '.htaccess',
-            'images/{,*/}*'
+            'images/**',
+            'styles/**.css',
+            'styles/fonts/**',
+            'scripts/**'
           ]
         }]
       }
