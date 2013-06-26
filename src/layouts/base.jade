@@ -19,19 +19,16 @@ html
     block title
       title= "My Blog"
   body
-    nav#nav
+    nav
       h1.name
         a(href="/") My Name
       ul.nav-links
-        li.menu-in.menu
-          a(href="#nav").icon-menu
-        li.menu-out.menu
-          a(href="#").icon-menu
-        li
+        li.menu.icon-menu
+        li.text-link
           a(href="/about.html") about
-        li
+        li.text-link
           a(href="/projects.html") projects
-        li
+        li.text-link
           a(href="/archives.html") archives
 
       .social-media
@@ -43,3 +40,5 @@ html
       block content
     a(href="http://colinwren.github.io/Cabin/")
       img.cabin(src="/images/cabin.png")
+    script(src="/scripts/jquery.js")
+    script(src="/scripts/main.js")
