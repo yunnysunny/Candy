@@ -7,18 +7,20 @@ block content
       a(href="/#{post.url}#comments") View comments
 
   ul.pagination.group
-    - for (var i = 0; i < pages.length; i++) {
-    -   if (pages[i].currentPage) var currentIndex = i;
-    - }
+    - if (pages.length > 1) {
+      - for (var i = 0; i < pages.length; i++) {
+      -   if (pages[i].currentPage) var currentIndex = i;
+      - }
 
-    - for (var j = currentIndex - 3; j < currentIndex + 3; j++) {
-      - var page = pages[j];
-      - if (page) {
-      li
-        - if (page.currentPage) {
-          a.active-page(href="#{page.url}")= j + 1
-        - } else {
-          a(href="#{page.url}")= j + 1
+      - for (var j = currentIndex - 3; j < currentIndex + 3; j++) {
+        - var page = pages[j];
+        - if (page) {
+        li
+          - if (page.currentPage) {
+            a.active-page(href="#{page.url}")= j + 1
+          - } else {
+            a(href="#{page.url}")= j + 1
+          - }
         - }
       - }
     - }

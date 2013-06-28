@@ -2,4 +2,25 @@
 <% posts.forEach(function(post){ %>
   <% include ../layouts/_post %>
 <% }) %>
+
+<ul class="pagination group">
+  <% if (pages.length > 1) {
+    for (var i = 0; i < pages.length; i++) {
+      if (pages[i].currentPage) var currentIndex = i;
+    }
+
+      for (var j = currentIndex - 3; j < currentIndex + 3; j++) {
+        var page = pages[j];
+        if (page) {%>
+        <li>
+          <% if (page.currentPage) { %>
+            <a class="active-page" href="<%= page.url %>" ><%= j + 1 %></a>
+          <% } else { %>
+            <a href="<%= page.url %>"><%= j + 1 %></a>
+          <% } %>
+        </li>
+      <% } %>
+    <% } %>
+  <% } %>
+</ul>
 <% include ../layouts/_footer %>
