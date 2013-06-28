@@ -1,0 +1,30 @@
+//- Social sharing icons
+a(href="http://news.ycombinator.com/submit", class="hn-share-button") Vote on HN
+a(href="https://twitter.com/share", class="twitter-share-button") Tweet
+div.g-plus(data-action="share", data-annotation="bubble")
+
+//- Disqus comments
+#comments
+    //- Add your Disqus snippet here
+
+
+//- Support scripts for social share icons
+//- Hacker News
+script.
+  (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = '//hnbutton.appspot.com/static/hn.min.js';
+    s.parentNode.insertBefore(g, s);
+  }(document, 'script'));
+//- Twitter
+script.
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//- Google plus
+script.
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
