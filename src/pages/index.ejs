@@ -1,6 +1,9 @@
 <% include ../layouts/_header %>
 <% posts.forEach(function(post){ %>
   <% include ../layouts/_post %>
+  <h2>
+    <a href="/<%= post.url %>#comments">View comments</a>
+  </h2>
 <% }) %>
 
 <ul class="pagination group">
