@@ -32,6 +32,7 @@ body {
   @include breakpoint(big-phone) {
     font-size: 16px;
   }
+
   @include breakpoint(small-phone) {
     font-size: 12px;
   }
@@ -82,8 +83,13 @@ body {
   bottom: .5em;
   width: 1.6em;
   opacity: .2;
+
   &:hover {
     opacity: .6;
+  }
+
+  @include breakpoint(big-phone) {
+    display: none;
   }
 }
 
