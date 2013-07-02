@@ -2,7 +2,6 @@
 title: My cool blog post
 date:   2013-08-3
 ----
-## Insightful post
 
 Some [Cupake Ipsum](http://cupcakeipsum.com) to brighten your day!
 
