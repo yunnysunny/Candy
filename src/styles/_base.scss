@@ -1,16 +1,15 @@
+// Choose one of these to be your mainTheme color
 $green: hsl(151, 65%, 60%);
-$darkPink: hsl(351, 60%, 50%);
-$purple: hsl(260,100%,70%);
-$orange: hsl(36,100%,50%);
-$brown: hsl(30,50%,40%);
+$blue: hsl(216, 65%, 60%);
+$orange: hsl(6, 90%, 70%);
+$purple: hsl(260, 38%, 56%);
+
+$mainTheme: $green;
 
 $offBlack: hsl(10, 1%, 22%);
-
 $codeFont: Monaco, Consolas, monospace;
 $postFont: 'Merriweather', serif;
 $headerFont: 'Open Sans', sans-serif;
-
-$mainTheme: $green;
 
 @mixin breakpoint($point) {
   @if $point == big-phone {
