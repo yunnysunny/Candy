@@ -1,7 +1,7 @@
 $(function() {
   var nav = false;
   // Show or hide nav dropdown
-  $(window).click(function(event) {
+  $('body').click(function(event) {
     if (nav) {
       $('nav').css({ overflow: 'hidden' });
       nav = false;
