@@ -1,6 +1,7 @@
 ----
 title: Candy Theme
 date:   2013-12-15
+description: Description of Candy's features
 ----
 
 Candy is a minimal blogging theme for Cabin. To use this theme check out the [Getting Started](http://colinwren.github.io/Cabin/) section of the Cabin website.
@@ -17,4 +18,4 @@ function praise (thing) {
 praise('Candy');
 ```
 ### Linked headers
-Coming soon!
+Link into specific sections of your posts.
