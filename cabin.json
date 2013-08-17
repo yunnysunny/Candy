@@ -6,6 +6,7 @@
     "Jade",
     "EJS"
   ],
+  "gruntPagesVersion": "0.2.5",
   "gruntPages": {
     "options": {
       "pageSrc": "src/pages"
@@ -16,7 +17,6 @@
       "layout": "src/layouts/post.<%= templateLang %>",
       "url": "blog/posts/:title",
       "options": {
-        "templateEngine": "<%= templateLang %>",
         "pagination": {
           "postsPerPage": 3,
           "listPage": "src/pages/index.<%= templateLang %>"
