@@ -6,6 +6,8 @@ module.exports = function (grunt) {
       }
     })).gruntPages;
 
+  gruntPagesConfig.posts.options.templateEngine = 'jade';
+
   grunt.initConfig({
     pages: gruntPagesConfig,
     compass: {
