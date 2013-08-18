@@ -8,18 +8,14 @@
 
 <ul class="pagination group">
   <% if (pages.length > 1) {
-    for (var i = 0; i < pages.length; i++) {
-      if (pages[i].currentPage) var currentIndex = i;
-    }
-
-      for (var j = currentIndex - 3; j < currentIndex + 3; j++) {
-        var page = pages[j];
+      for (var i = currentIndex - 3; i < currentIndex + 3; i++) {
+        var page = pages[i];
         if (page) {%>
         <li>
-          <% if (page.currentPage) { %>
-            <a class="active-page" href="<%= page.url %>" ><%= j + 1 %></a>
+          <% if (i === currentIndex) { %>
+            <a class="active-page" href="<%= page.url %>" ><%= i + 1 %></a>
           <% } else { %>
-            <a href="<%= page.url %>"><%= j + 1 %></a>
+            <a href="<%= page.url %>"><%= i + 1 %></a>
           <% } %>
         </li>
       <% } %>
