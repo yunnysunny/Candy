@@ -6,7 +6,7 @@ module.exports = function (grunt) {
       }
     })).gruntPages;
 
-  gruntPagesConfig.posts.options.templateEngine = 'jade';
+  gruntPagesConfig.posts.options.templateEngine = grunt.option('lang') || 'jade';
 
   grunt.initConfig({
     pages: gruntPagesConfig,
