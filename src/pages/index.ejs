@@ -2,7 +2,7 @@
 <% posts.forEach(function(post){ %>
   <% include ../layouts/_post %>
   <h2>
-    <a href="/<%= post.url %>#comments">View comments</a>
+    <a href="<%= data.baseUrl %><%= post.url %>#comments">View comments</a>
   </h2>
 <% }) %>
 
@@ -13,9 +13,9 @@
         if (page) {%>
         <li>
           <% if (i === currentIndex) { %>
-            <a class="active-page" href="<%= page.url %>" ><%= i + 1 %></a>
+            <a class="active-page" href="<%= data.baseUrl %><%= page.url %>" ><%= i + 1 %></a>
           <% } else { %>
-            <a href="<%= page.url %>"><%= i + 1 %></a>
+            <a href="<%= data.baseUrl %><%= page.url %>"><%= i + 1 %></a>
           <% } %>
         </li>
       <% } %>

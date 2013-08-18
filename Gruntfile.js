@@ -85,14 +85,31 @@ module.exports = function (grunt) {
     },
     clean: {
       dist: 'dist'
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
-  grunt.registerTask('build', [
-    'clean',
-    'pages',
-    'compass',
-    'copy'
+  grunt.registerTask('build', function(target) {
+    if (target === 'GHPages') {
+      gruntPagesConfig.options.data.baseUrl = '/Candy/';
+    }
+
+    grunt.task.run([
+      'clean',
+      'pages',
+      'compass',
+      'copy'
+    ]);
+  });
+
+  grunt.registerTask('deploy', [
+    'build:GHPages',
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [

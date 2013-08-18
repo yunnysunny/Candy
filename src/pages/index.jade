@@ -4,7 +4,7 @@ block content
   each post in posts
     mixin post(post)
     h2
-      a(href="/#{post.url}#comments") View comments
+      a(href="#{data.baseUrl}#{post.url}#comments") View comments
 
   ul.pagination.group
     - if (pages.length > 1) {
@@ -13,9 +13,9 @@ block content
         - if (page) {
         li
           - if (i === currentIndex) {
-            a.active-page(href="#{page.url}")= i + 1
+            a.active-page(href="#{data.baseUrl}#{page.url}")= i + 1
           - } else {
-            a(href="#{page.url}")= i + 1
+            a(href="#{data.baseUrl}#{page.url}")= i + 1
           - }
         - }
       - }
