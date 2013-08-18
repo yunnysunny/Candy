@@ -3,6 +3,11 @@
 @import url(solarized-dark.css);
 /*Icon Set: IcoMoon - Free -- http://keyamoon.com/icomoon/*/
 /*License:  CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/*/
+/*
+Note: To edit icons, go to the following url: http://icomoon.io/app/
+      Then click the stacked circle icon in the bottom right and upload the CandyIcoMoonSession.json file from this folder
+      After updating the icons simply download them and copy the fonts folder along with style.css into this folder and rename style.css to _icons.scss
+*/
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot");
@@ -11,8 +16,27 @@
   font-style: normal;
 }
 
-/* line 14, ../../src/styles/_icons.scss */
-.icon-github, .icon-menu, .icon-dribbble, .icon-mail, .icon-google-plus, .icon-facebook, .icon-twitter, .icon-pinterest {
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 22, ../../src/styles/_icons.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 39, ../../src/styles/_icons.scss */
+.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -23,49 +47,49 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 24, ../../src/styles/_icons.scss */
-.icon-github:before {
-  content: "\e00b";
-}
-
-/* line 27, ../../src/styles/_icons.scss */
-.icon-menu:before {
-  content: "\e001";
-}
-
-/* line 30, ../../src/styles/_icons.scss */
-.icon-dribbble:before {
+/* line 49, ../../src/styles/_icons.scss */
+.icon-pinterest:before {
   content: "\e000";
 }
 
-/* line 33, ../../src/styles/_icons.scss */
-.icon-google-plus:before {
-  content: "\e005";
+/* line 52, ../../src/styles/_icons.scss */
+.icon-github:before {
+  content: "\e001";
 }
 
-/* line 36, ../../src/styles/_icons.scss */
-.icon-pinterest:before {
+/* line 55, ../../src/styles/_icons.scss */
+.icon-twitter:before {
+  content: "\e002";
+}
+
+/* line 58, ../../src/styles/_icons.scss */
+.icon-menu:before {
   content: "\e003";
 }
 
-/* line 39, ../../src/styles/_icons.scss */
+/* line 61, ../../src/styles/_icons.scss */
+.icon-dribbble:before {
+  content: "\e004";
+}
+
+/* line 64, ../../src/styles/_icons.scss */
 .icon-facebook:before {
-  content: "\e007";
+  content: "\e005";
 }
 
-/* line 42, ../../src/styles/_icons.scss */
-.icon-twitter:before {
-  content: "\e00c";
+/* line 67, ../../src/styles/_icons.scss */
+.icon-google-plus:before {
+  content: "\e006";
 }
 
-/* line 23, ../../src/styles/_base.scss */
+/* line 24, ../../src/styles/_base.scss */
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 29, ../../src/styles/_base.scss */
+/* line 30, ../../src/styles/_base.scss */
 body {
   margin: 0;
   color: #393838;
@@ -74,25 +98,25 @@ body {
   font-size: 17px;
 }
 @media (max-width: 1250px) {
-  /* line 29, ../../src/styles/_base.scss */
+  /* line 30, ../../src/styles/_base.scss */
   body {
     font-size: 16px;
   }
 }
 @media (max-width: 630px) {
-  /* line 29, ../../src/styles/_base.scss */
+  /* line 30, ../../src/styles/_base.scss */
   body {
     font-size: 12px;
   }
 }
 
-/* line 45, ../../src/styles/_base.scss */
+/* line 46, ../../src/styles/_base.scss */
 .content {
   margin: 0 auto;
   max-width: 680px;
   width: 55%;
 }
-/* line 50, ../../src/styles/_base.scss */
+/* line 51, ../../src/styles/_base.scss */
 .content a {
   color: #393838;
   -webkit-transition: color 0.2s;
@@ -100,39 +124,39 @@ body {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 54, ../../src/styles/_base.scss */
+/* line 55, ../../src/styles/_base.scss */
 .content a:hover {
   color: #2dd282;
 }
 @media (max-width: 1250px) {
-  /* line 45, ../../src/styles/_base.scss */
+  /* line 46, ../../src/styles/_base.scss */
   .content {
     margin: 45px auto;
     width: 86%;
   }
 }
 
-/* line 65, ../../src/styles/_base.scss */
+/* line 66, ../../src/styles/_base.scss */
 .pagination {
   padding: 20px 0;
 }
-/* line 68, ../../src/styles/_base.scss */
+/* line 69, ../../src/styles/_base.scss */
 .pagination li {
   float: left;
 }
-/* line 72, ../../src/styles/_base.scss */
+/* line 73, ../../src/styles/_base.scss */
 .pagination a {
   padding: 10px;
   text-decoration: none;
   font-size: 1.7em;
   font-family: "Open Sans", sans-serif;
 }
-/* line 79, ../../src/styles/_base.scss */
+/* line 80, ../../src/styles/_base.scss */
 .pagination .active-page {
   color: #57db9b;
 }
 
-/* line 84, ../../src/styles/_base.scss */
+/* line 85, ../../src/styles/_base.scss */
 .cabin {
   position: fixed;
   right: .5em;
@@ -140,18 +164,18 @@ body {
   width: 1.6em;
   opacity: .2;
 }
-/* line 91, ../../src/styles/_base.scss */
+/* line 92, ../../src/styles/_base.scss */
 .cabin:hover {
   opacity: .6;
 }
 @media (max-width: 1250px) {
-  /* line 84, ../../src/styles/_base.scss */
+  /* line 85, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
 }
 
-/* line 101, ../../src/styles/_base.scss */
+/* line 102, ../../src/styles/_base.scss */
 .group:after {
   content: "";
   display: table;
@@ -183,7 +207,7 @@ nav a:hover {
     width: 100%;
     height: auto;
   }
-  /* line 101, ../../src/styles/_base.scss */
+  /* line 102, ../../src/styles/_base.scss */
   nav:after {
     content: "";
     display: table;
@@ -320,11 +344,16 @@ nav a:hover {
 }
 
 /* line 40, ../../src/styles/_post.scss */
+.social {
+  padding: 0.55em 0 1.4em;
+}
+
+/* line 44, ../../src/styles/_post.scss */
 .anchor {
   text-decoration: none;
 }
 
-/* line 45, ../../src/styles/_post.scss */
+/* line 49, ../../src/styles/_post.scss */
 p code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -336,7 +365,7 @@ p code {
   border-radius: 3px;
 }
 
-/* line 52, ../../src/styles/_post.scss */
+/* line 56, ../../src/styles/_post.scss */
 code {
   margin: 0;
   padding: 0;
@@ -345,13 +374,13 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 60, ../../src/styles/_post.scss */
+/* line 64, ../../src/styles/_post.scss */
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
 }
 
-/* line 65, ../../src/styles/_post.scss */
+/* line 69, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -359,7 +388,7 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 68, ../../src/styles/_post.scss */
+/* line 72, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
 }
