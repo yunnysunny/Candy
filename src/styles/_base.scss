@@ -59,8 +59,12 @@ body {
   }
 
   @include breakpoint(big-phone) {
-    margin: 45px auto;
+    margin: 75px auto 25px;
     width: 86%;
+  }
+
+  @include breakpoint(small-phone) {
+    margin: 45px auto 15px;
   }
 }
 
