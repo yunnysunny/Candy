@@ -3,8 +3,6 @@
   margin: 2em 0;
   padding-bottom: 5px;
   position: relative;
-  float: left;
-  width: 100%;
 
   a {
     text-decoration: none;
@@ -24,7 +22,7 @@
   margin: 0;
   right: 0;
   font-size: 1.3em;
-  opacity: 0.4;
+  color: $lightTextColor;
 }
 
 .post-body {
@@ -71,5 +69,27 @@ pre {
 
   pre {
     padding: 15px;
+  }
+}
+
+.comments {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.2em;
+
+  a {
+    color: $lightTextColor;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: $mainTheme;
+      opacity: 1;
+    }
+  }
+
+  .icon-bubbles {
+    padding: 3px 15px 5px 0;
+    float: left;
   }
 }

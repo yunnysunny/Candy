@@ -11,6 +11,7 @@ $headerFont: 'Open Sans', sans-serif;
 
 $mainTheme: $green;
 $baseTextColor: $offBlack;
+$lightTextColor: transparentize($baseTextColor, .5);
 
 @mixin breakpoint($point) {
   @if $point == big-phone {
