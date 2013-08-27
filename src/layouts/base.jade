@@ -3,7 +3,7 @@ mixin postHead(post)
   .post-head.group
     a(href="#{data.baseUrl}#{post.url}")
       h1.post-title= post.title
-    h2.post-date!= [post.date.getUTCFullYear(), post.date.getMonth() + 1, post.date.getDate()].join(' &#183; ')
+    h2.post-date!= [post.date.getUTCFullYear(), post.date.getUTCMonth() + 1, post.date.getUTCDate()].join(' &#183; ')
 
 mixin post(post)
   mixin postHead(post)
