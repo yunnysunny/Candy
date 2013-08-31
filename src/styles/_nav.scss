@@ -61,7 +61,6 @@ nav {
     padding: 0 0 .55em;
   }
 
-
   @include breakpoint(big-phone) {
     padding: 0;
     margin: 0;
@@ -74,7 +73,6 @@ nav {
     }
   }
 }
-
 
 .social-media {
   text-align: center;
