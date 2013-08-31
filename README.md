@@ -60,4 +60,6 @@ Candy uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. By 
 
 To alter the icons, go to [this](http://icomoon.io/app/) url, and click the session icon in the bottom right and upload the [src/styles/CandyIcoMoonSession.json](https://github.com/colinwren/Candy/blob/master/src/styles/CandyIcoMoonSession.json) file.
 
+<img align="right" height="150" src="https://raw.github.com/colinwren/Candy/master/src/styles/session_icon.png">
+
 After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the CandyIcoMoonSession.json by clicking `Store Session` after clicking the session icon to allow for future changes.
