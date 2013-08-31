@@ -58,8 +58,8 @@ jQuery is used to toggle the touch optimized menu and toggle the fixed navigatio
 
 Candy uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. By default it uses icons for social media and comments, but you can easily add and remove icons.
 
-To alter the icons, go to [this](http://icomoon.io/app/) url, and click the session icon in the bottom right and upload the [src/styles/CandyIcoMoonSession.json](https://github.com/colinwren/Candy/blob/master/src/styles/CandyIcoMoonSession.json) file.
+To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the [src/styles/CandyIcoMoonSession.json](https://github.com/colinwren/Candy/blob/master/src/styles/CandyIcoMoonSession.json) file.
 
-<img align="right" height="150" src="https://raw.github.com/colinwren/Candy/master/src/styles/session_icon.png">
+<img src="https://raw.github.com/colinwren/Candy/readme/src/styles/session_icon.png">
 
 After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the CandyIcoMoonSession.json by clicking `Store Session` after clicking the session icon to allow for future changes.
