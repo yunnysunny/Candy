@@ -4,7 +4,6 @@ nav {
   height: 100%;
   top: 0;
   background: $mainTheme;
-  overflow: hidden;
 
   a {
     color: white;
@@ -40,11 +39,20 @@ nav {
 
 .menu {
   text-align: right;
-  cursor: pointer;
+  text-decoration: none;
   color: white;
   display: none;
   margin: 0 0 0 .9em;
   padding: .75em .8em;
+  font-size: 17px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.selected {
+    color: hsl(0, 1%, 22%);
+  }
 
   @include breakpoint(big-phone) {
     display: block;
@@ -62,6 +70,7 @@ nav {
   }
 
   @include breakpoint(big-phone) {
+    visibility: hidden;
     padding: 0;
     margin: 0;
     position: absolute;
