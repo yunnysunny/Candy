@@ -3,6 +3,8 @@
 
 ## Installation
 
+To use Candy you must have [Node.js](http://nodejs.org/), [Git](http://git-scm.com/), [Python](http://www.python.org/) (for [Pygments](http://pygments.org/)), [Ruby](http://www.ruby-lang.org/), and [Compass](http://compass-style.org/) installed.
+
 First install Cabin and Grunt globally with this command:
 
 ```bash
