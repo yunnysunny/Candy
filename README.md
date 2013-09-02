@@ -97,7 +97,7 @@ After updating the icons simply download them and replace the `fonts` folder ins
 
 (The MIT License)
 
-Copyright (c) 2009-2012 Colin Wren
+Copyright (c) 2013 Colin Wren
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
