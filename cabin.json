@@ -6,6 +6,13 @@
     "Jade",
     "EJS"
   ],
+  "CSSPreprocessor": [
+    "Sass"
+  ],
+  "templateEngine": [
+    "Jade",
+    "EJS"
+  ],
   "gruntPagesVersion": "~0.4.1",
   "gruntPages": {
     "options": {
