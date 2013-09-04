@@ -33,5 +33,25 @@
         }
       }
     }
+  },
+  "gruntPagesConfig": {
+    "options": {
+      "pageSrc": "src/pages",
+      "data": {
+        "baseUrl": "/"
+      }
+    },
+    "posts": {
+      "src": "posts",
+      "dest": "dist",
+      "layout": "src/layouts/post.<%= templateEngine %>",
+      "url": "blog/posts/:title/",
+      "options": {
+        "pagination": {
+          "postsPerPage": 3,
+          "listPage": "src/pages/index.<%= templateEngine %>"
+        }
+      }
+    }
   }
 }
