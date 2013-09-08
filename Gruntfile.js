@@ -125,14 +125,6 @@ module.exports = function (grunt) {
       files: {
         src: ['Grunfile.js', 'test/*.js', 'src/scripts/**.js']
       }
-    },
-    shell: {
-      testdev: {
-        options: {
-          stdout: true
-        },
-        command: 'NODE_ENV=dev grunt testTheme'
-      }
     }
   });
 

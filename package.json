@@ -19,7 +19,6 @@
     "wrench": "~1.5.1",
     "grunt-contrib-jshint": "~0.6.4",
     "js-beautify": "~1.4.0",
-    "grunt-shell": "~0.3.1",
     "diff": "~1.0.6"
   },
   "scripts": {
