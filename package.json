@@ -13,7 +13,16 @@
     "grunt-contrib-watch": "~0.4.3",
     "matchdep": "~0.1.1",
     "grunt-gh-pages": "~0.7.0",
-    "cabin": "~0.2.0"
+    "cabin": "~0.2.0",
+    "should": "~1.2.2",
+    "grunt-simple-mocha": "~0.4.0",
+    "wrench": "~1.5.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "js-beautify": "~1.4.0",
+    "diff": "~1.0.6"
+  },
+  "scripts": {
+    "test": "grunt testTheme"
   },
   "engines": {
     "node": ">=0.10.0"

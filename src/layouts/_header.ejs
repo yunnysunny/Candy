@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="<%= data.baseUrl %>images/cabin.png" type="image/png">
-    <link rel="stylesheet" href="<%= data.baseUrl %>styles/main.css">
+    <link rel="icon" type="image/png" href="<%= data.baseUrl %>images/cabin.png" >
+    <link href="<%= data.baseUrl %>styles/main.css" rel="stylesheet">
     <% if (locals.title) { %>
     <title><%= locals.title %></title>
     <% } else { %>
@@ -15,12 +15,11 @@
     <% } %>
   </head>
   <body>
-  </body>
     <nav>
       <h1 class="name">
         <a href="<%= data.baseUrl %>">My Name</a>
       </h1>
-      <a class="icon-menu menu"></a>
+      <a class="menu icon-menu"></a>
       <ul class="nav-links">
         <li class="text-link">
           <a href="<%= data.baseUrl %>about.html">about</a>
