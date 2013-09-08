@@ -37,7 +37,6 @@ describe('Candy theme', function () {
       if (noInstall) {
         wrench.copyDirSyncRecursive('node_modules', EJSSiteName + '/node_modules');
       }
-      process.exit();
 
       var gruntBuildProcess = spawn('grunt', ['build'], {
         cwd: EJSSiteName
