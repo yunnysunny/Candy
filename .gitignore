@@ -4,3 +4,6 @@ npm-debug.log
 .DS_Store
 dist
 .grunt
+
+# Folder for diffing template engines
+.engineDiff
