@@ -1,6 +1,8 @@
 # Candy
 > Minimal blogging theme for [Cabin](http://cabinjs.com)
 
+[![Dependency Status](https://gemnasium.com/CabinJS/Candy.png)](https://gemnasium.com/CabinJS/Candy) [![Travis Status](https://travis-ci.org/CabinJS/Candy.png)](https://travis-ci.org/CabinJS/Candy)
+
 ## Installation
 
 To use Candy you must have [Node.js](http://nodejs.org/), [Git](http://git-scm.com/), [Python 2.7](http://www.python.org/) (for [Pygments](http://pygments.org/)), and [Compass](http://compass-style.org/) installed.
@@ -17,7 +19,7 @@ Then scaffold a static site generator using the Candy theme with this command:
 cabin new blog colinwren/Candy
 ```
 
-Now change into the `blog` directory and run the `grunt` command: 
+Now change into the `blog` directory and run the `grunt` command:
 
 ```bash
 cd blog && grunt
@@ -51,7 +53,7 @@ You are expected to edit the `src/pages/about.(jade/ejs)` and `src/pages/project
 
 #### Posts
 
-You are expected to edit the default posts and add your own metadata and content. 
+You are expected to edit the default posts and add your own metadata and content.
 
 ### Authoring Posts
 
