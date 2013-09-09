@@ -2,9 +2,9 @@ module.exports = function (grunt) {
 
   var gruntPagesConfig = JSON.parse(grunt.template.process(grunt.file.read('cabin.json'), {
       data: {
-        templateLang: grunt.option('lang') || 'jade'
+        templateEngine: grunt.option('lang') || 'jade'
       }
-    })).gruntPages;
+    })).gruntPagesConfig;
 
   gruntPagesConfig.posts.options.templateEngine = grunt.option('lang') || 'jade';
 
