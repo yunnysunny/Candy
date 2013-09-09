@@ -88,6 +88,12 @@ body {
   }
 }
 
+.github-ribbon {
+  @include breakpoint(big-phone) {
+    display: none;
+  }
+}
+
 .cabin {
   position: fixed;
   right: .5em;
