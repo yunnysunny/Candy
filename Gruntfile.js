@@ -95,7 +95,8 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      dist: 'dist'
+      dist: 'dist',
+      engine: '.engineDiff'
     },
     'gh-pages': {
       options: {
@@ -106,7 +107,7 @@ module.exports = function (grunt) {
     simplemocha: {
       options: {
         globals: ['should'],
-        timeout: 60000,
+        timeout: 600000,
         ignoreLeaks: false,
         ui: 'bdd',
         reporter: 'spec'
@@ -160,7 +161,7 @@ module.exports = function (grunt) {
     grunt.task.run('testTheme');
   });
 
-  grunt.registerTask('testTheme', ['jshint', 'buildEngines', 'simplemocha']);
+  grunt.registerTask('testTheme', ['clean', 'jshint', 'buildEngines', 'simplemocha']);
   grunt.registerTask('engineDiff', ['buildEngines', 'diffEngines', 'watch:engineDiff']);
 
   grunt.registerTask('buildEngines', 'Builds template engines to make sure outputted html is the same', function () {

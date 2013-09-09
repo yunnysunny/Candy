@@ -28,12 +28,18 @@ module.exports = function () {
       var JadeFile = beautifyHtml(fs.readFileSync(file.replace(EJSSiteName, JadeSiteName), 'utf8').replace(/\n/g, ''));
       var diff = jsDiff.diffChars(EJSFile, JadeFile);
 
-      if (diff.length === 0) return;
+
+      var numberOfDiffs = diff.filter(function (fileDiff) {
+        return fileDiff.value.trim().length && (fileDiff.removed || fileDiff.added);
+      });
+
+      if (diff.length === 0 || numberOfDiffs.length === 0) return;
 
       console.log('\n\nDiff for '.blue + file.slice(EJSSiteName.length + 1).magenta);
       console.log('Green is Jade.'.green + '\nRed is EJS.\n'.red);
 
       diff.forEach(function (templateDiff, i, diffs) {
+
         if (templateDiff.added && diffs[i + 1] && diffs[i + 1].removed) {
           var swap = templateDiff;
           templateDiff = diffs[i + 1];

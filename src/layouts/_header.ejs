@@ -12,7 +12,7 @@
     <% } %>
     <% if (locals.description) { %>
     <meta name="description" content="<%= locals.description %>">
-    <% } %>
+    <% locals.description = null;} %>
   </head>
   <body>
     <nav>
