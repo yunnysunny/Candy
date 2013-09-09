@@ -1,7 +1,7 @@
 # Candy
 > Minimal blogging theme for [Cabin](http://cabinjs.com)
 
-[![Dependency Status](https://gemnasium.com/CabinJS/Candy.png)](https://gemnasium.com/CabinJS/Candy) [![Travis Status](https://travis-ci.org/CabinJS/Candy.png)](https://travis-ci.org/CabinJS/Candy)
+[![Dependency Status](https://gemnasium.com/CabinJS/Candy.png)](https://gemnasium.com/CabinJS/Candy) [![Travis Status](https://travis-ci.org/CabinJS/Candy.png?branch=master)](https://travis-ci.org/CabinJS/Candy)
 
 ## Installation
 
