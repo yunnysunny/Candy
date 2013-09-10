@@ -2,9 +2,9 @@ module.exports = function (grunt) {
 
   var gruntPagesConfig = JSON.parse(grunt.template.process(grunt.file.read('cabin.json'), {
       data: {
-        templateLang: grunt.option('lang') || 'jade'
+        templateEngine: grunt.option('lang') || 'jade'
       }
-    })).gruntPages;
+    })).gruntPagesConfig;
 
   gruntPagesConfig.posts.options.templateEngine = grunt.option('lang') || 'jade';
 
@@ -118,14 +118,6 @@ module.exports = function (grunt) {
       engine: {
         src: ['test/testEngineDiff.js']
       }
-    },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      files: {
-        src: ['Grunfile.js', 'test/*.js', 'src/scripts/**.js']
-      }
     }
   });
 
@@ -161,7 +153,7 @@ module.exports = function (grunt) {
     grunt.task.run('testTheme');
   });
 
-  grunt.registerTask('testTheme', ['clean', 'jshint', 'buildEngines', 'simplemocha']);
+  grunt.registerTask('testTheme', ['clean', 'buildEngines', 'simplemocha']);
   grunt.registerTask('engineDiff', ['buildEngines', 'diffEngines', 'watch:engineDiff']);
 
   grunt.registerTask('buildEngines', 'Builds template engines to make sure outputted html is the same', function () {
