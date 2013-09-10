@@ -23,7 +23,58 @@
           <h1 class="post-title">Candy Theme</h1></a>
         <h2 class="post-date">2013 &#183; 12 &#183; 15</h2>
       </div>
-      <div class="post-body"><p>Candy is a minimal blogging theme for <a href="http://cabinjs.com">Cabin</a>. To use this theme check out the <a href="https://github.com/CabinJS/Candy">User Manual</a> on GitHub.</p>
+      <div class="post-body"><p>Candy is a minimal blogging theme for <a href="http://cabinjs.com">Cabin</a>. </p>
+<a name="installation" class="anchor" href="#installation"><h2>Installation</h2>
+</a><p>To use Candy you must have <a href="http://nodejs.org/">Node.js</a>, <a href="http://www.python.org/">Python 2.7</a> (for <a href="http://pygments.org/">Pygments</a>), and <a href="http://compass-style.org/">Compass</a> installed.</p>
+<p>First install Cabin and Grunt globally with this command:</p>
+<pre><code class="lang-bash"><div class="highlight"><pre>npm install -g cabin grunt-cli
+</pre></div>
+</code></pre>
+<p>Then scaffold a static site generator using the Candy theme with this command:</p>
+<pre><code class="lang-bash"><div class="highlight"><pre>cabin new blog CabinJS/Candy
+</pre></div>
+</code></pre>
+<p>Now change into the <code>blog</code> directory and run the <code>grunt</code> command:</p>
+<pre><code class="lang-bash"><div class="highlight"><pre><span class="nb">cd </span>blog <span class="o">&amp;&amp;</span> grunt
+</pre></div>
+</code></pre>
+<p>This will build your site, start a static file server, open a browser tab with the site&#39;s homepage, and start a watch process to rebuild your site when source files change.</p>
+<p>Try editing a markdown file in the <code>posts</code> folder or css in the <code>src/styles</code> folder and upon saving, your site will automatically be rebuilt with the updated content/styles. When you edit markdown, your browser will automatically refresh to view new content, and when editing styles, they will be injected directly into the page for an immediate update.</p>
+<p><strong>Note: In the future, you can build your site by running the <code>grunt</code> command in the <code>blog</code> folder.</strong></p>
+<a name="user-guide" class="anchor" href="#user-guide"><h2>User Guide</h2>
+</a><a name="expected-files-to-edit" class="anchor" href="#expected-files-to-edit"><h3>Expected files to edit</h3>
+</a><p>There are parts of the Candy theme which you are expected to edit when building your site. Here they are:</p>
+<a name="layouts" class="anchor" href="#layouts"><h4>Layouts</h4>
+</a><p>You are expected to update the social media links with your GitHub username and Twitter handle in the <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L35-L36"><code>src/layouts/base.jade</code></a> or <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L35-L36"><code>src/layouts/_header.ejs</code></a> file. We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the <a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27"><code>src/styles/_icon.scss</code></a> file, and here is an example of how you would add a link to your Pinterest profile:</p>
+<pre><code class="lang-html"><div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://pinterest.com/chrisawren/&quot;</span> <span class="na">class=</span><span class="s">&quot;icon-pinterest&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+</pre></div>
+</code></pre>
+<p>To get <a href="http://disqus.com/">Disqus</a> setup, you must add your Disqus username to the <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/_social.jade#L35"><code>src/layouts/_social.jade</code></a> or <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/_social.ejs#L39"><code>src/layouts/_social.ejs</code></a> file. There are also placeholder comments for Google Analytics scripts in the <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L45"><code>src/layouts/base.jade</code></a> and <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/_footer.ejs#L8"><code>src/layouts/_footer.ejs</code></a> files.</p>
+<a name="pages" class="anchor" href="#pages"><h4>Pages</h4>
+</a><p>You are expected to edit the <code>src/pages/about.(jade/ejs)</code> and <code>src/pages/projects.(jade/ejs)</code> pages to describe yourself and your projects.</p>
+<a name="posts" class="anchor" href="#posts"><h4>Posts</h4>
+</a><p>You are expected to edit the default posts and add your own metadata and content.</p>
+<a name="authoring-posts" class="anchor" href="#authoring-posts"><h3>Authoring Posts</h3>
+</a><p>Candy generates pages using markdown posts in the <code>posts</code> folder. It expects markdown posts to contain two required metadata properties:</p>
+<a name="title" class="anchor" href="#title"><h4>title</h4>
+</a><p>Type: <code>String</code></p>
+<p>Title of the post which is also used as its url.</p>
+<a name="date" class="anchor" href="#date"><h4>date</h4>
+</a><p>Type: <code>String</code></p>
+<p>DateString which is parsed and displayed as the publishing date of the post.</p>
+<p>To learn more about post metadata, check out <a href="https://github.com/CabinJS/grunt-pages#authoring-posts">grunt-pages</a>.</p>
+<a name="changing-the-main-theme-color" class="anchor" href="#changing-the-main-theme-color"><h3>Changing the main theme color</h3>
+</a><p>We provide a number of theme colors out of the box in the <a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_base.scss#L1-L6"><code>src/styles/_base.scss</code></a> file. To change the color, simply change the value of the <code>$mainTheme</code> Sass variable.</p>
+<a name="included-libraries-tools" class="anchor" href="#included-libraries-tools"><h3>Included libraries/tools</h3>
+</a><a name="normalize.css" class="anchor" href="#normalize.css"><h4>normalize.css</h4>
+</a><p><a href="https://github.com/CabinJS/Candy/blob/master/src/styles/normalize.scss">Normailze.css</a> is used to normalize styles across browsers.</p>
+<a name="jquery" class="anchor" href="#jquery"><h4>jQuery</h4>
+</a><p>jQuery is used to toggle the touch optimized menu and toggle the fixed navigation on mobile scrolling in <a href="https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js"><code>src/scripts/main.js</code></a>.</p>
+<a name="icomoon" class="anchor" href="#icomoon"><h4>IcoMoon</h4>
+</a><p>Candy uses the <a href="http://icomoon.io/app/">IcoMoon App</a> to generate icon fonts. By default it uses icons for social media and comments, but you can easily add and remove icons.</p>
+<p>To alter the icons, go to <a href="http://icomoon.io/app/">this</a> url, and click the below session icon in the bottom right and upload the <code>src/styles/CandyIcoMoonSession.json</code> file.</p>
+<p><img src="http://i.imgur.com/7fmXyfF.png"></p>
+<p>After updating the icons simply download them and replace the <code>fonts</code> folder inside the <code>src/styles</code> folder and replace the contents of <code>src/styles/_icon.scss</code> with <code>style.css</code>. You will also need to update the <code>src/styles/CandyIcoMoonSession.json</code> by clicking <code>Store Session</code> after clicking the session icon to allow for future icon changes.</p>
 <a name="markdown" class="anchor" href="#markdown"><h2>Markdown</h2>
 </a><p>Cabin supports <a href="https://help.github.com/articles/github-flavored-markdown">GitHub flavored Markdown</a> for its static site generation. It has awesome features like:</p>
 <a name="syntax-highlighted-code-blocks" class="anchor" href="#syntax-highlighted-code-blocks"><h3>Syntax highlighted code blocks</h3>
