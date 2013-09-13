@@ -3,93 +3,33 @@
 
 [![Dependency Status](https://gemnasium.com/CabinJS/Candy.png)](https://gemnasium.com/CabinJS/Candy) [![Travis Status](https://travis-ci.org/CabinJS/Candy.png?branch=master)](https://travis-ci.org/CabinJS/Candy)
 
-## Installation
+## Using Candy
 
-To use Candy you must have [Node.js](http://nodejs.org/), [Python 2.7](http://www.python.org/) (for [Pygments](http://pygments.org/)), and [Compass](http://compass-style.org/) installed.
+To use Candy, go to the [GitHub page](cabinjs.github.io/Candy/).
 
-First install Cabin and Grunt globally with this command:
+## Contributing to Candy
 
-```bash
-npm install -g cabin grunt-cli
-```
+### Theme Philosopy
 
-Then scaffold a static site generator using the Candy theme with this command:
+Candy is a minimalist blogging theme. Its goal is to provide a clean interface for consuming blog posts and interacting with stand alone pages(About/Projects). It is fully responsive, and aims to be a great experience on all devices.
 
-```bash
-cabin new blog CabinJS/Candy
-```
+#### Tests
 
-Now change into the `blog` directory and run the `grunt` command:
+Candy uses Travis CI to make sure the theme installs correctly using the Cabin version listed in the package.json's dependencies, and that the html output is the same for both the Jade and EJS template engines. To run the tests, run `grunt test` in your terminal.
 
-```bash
-cd blog && grunt
-```
+If the installation test fails, try installing the theme manually with the `--local` flag. If the template engine output test fails, read the [testing engine output](#testing-engine-output) section below.
 
-This will build your site, start a static file server, open a browser tab with the site's homepage, and start a watch process to rebuild your site when source files change.
+### Template Engine Support
 
-Try editing a markdown file in the `posts` folder or css in the `src/styles` folder and upon saving, your site will automatically be rebuilt with the updated content/styles. When you edit markdown, your browser will automatically refresh to view new content, and when editing styles, they will be injected directly into the page for an immediate update.
+Candy supports both the Jade and EJS template engines. As such, when contributing to Candy, make sure to make template changes in both engines. We have a grunt task, `engineDiff` which will build a site using both engines and print any differences the engine's html output.
 
-**Note: In the future, you can build your site by running the `grunt` command in the `blog` folder.**
+#### Testing engine output
 
-## User Manual
+The best workflow is to work on your preferred template engine and then make the other one match by running `engineDiff`. The `engineDiff` task diffs the engine output, and then watches the template files for changes to re-compare, so you can just edit templates and keep comparing until the html output diff is empty.
 
-### Expected files to edit
+#### Updating Icons
 
-There are parts of the Candy theme which you are expected to edit when building your site. Here they are:
-
-#### Layouts
-
-You are expected to update the social media links with your GitHub username and Twitter handle in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L35-L36) or [`src/layouts/_header.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L35-L36) file. We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the [`src/styles/_icon.scss`](https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27) file, and here is an example of how you would add a link to your Pinterest profile:
-
-```html
-<a href="http://pinterest.com/chrisawren/" class="icon-pinterest"></a>
-```
-
-To get [Disqus](http://disqus.com/) setup, you must add your Disqus username to the [`src/layouts/_social.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_social.jade#L35) or [`src/layouts/_social.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_social.ejs#L39) file. There are also placeholder comments for Google Analytics scripts in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L45) and [`src/layouts/_footer.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_footer.ejs#L8) files.
-
-#### Pages
-
-You are expected to edit the `src/pages/about.(jade/ejs)` and `src/pages/projects.(jade/ejs)` pages to describe yourself and your projects.
-
-#### Posts
-
-You are expected to edit the default posts and add your own metadata and content.
-
-### Authoring Posts
-
-Candy generates pages using markdown posts in the `posts` folder. It expects markdown posts to contain two required metadata properties:
-
-#### title
-Type: `String`
-
-Title of the post which is also used as its url.
-
-#### date
-Type: `String`
-
-DateString which is parsed and displayed as the publishing date of the post.
-
-To learn more about post metadata, check out [grunt-pages](https://github.com/CabinJS/grunt-pages#authoring-posts).
-
-### Changing the main theme color
-
-We provide a number of theme colors out of the box in the [`src/styles/_base.scss`](https://github.com/CabinJS/Candy/blob/master/src/styles/_base.scss#L1-L6) file. To change the color, simply change the value of the `$mainTheme` Sass variable.
-
-### Included libraries/tools
-
-#### normalize.css
-
-[Normailze.css](https://github.com/CabinJS/Candy/blob/master/src/styles/normalize.scss) is used to normalize styles across browsers.
-
-#### jQuery
-
-jQuery is used to toggle the touch optimized menu and toggle the fixed navigation on mobile scrolling in [`src/scripts/main.js`](https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js).
-
-#### IcoMoon
-
-Candy uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. By default it uses icons for social media and comments, but you can easily add and remove icons.
-
-To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the `src/styles/CandyIcoMoonSession.json` file.
+Candy uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the `src/styles/CandyIcoMoonSession.json` file.
 
 <img src="http://i.imgur.com/7fmXyfF.png">
 
