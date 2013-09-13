@@ -5,7 +5,7 @@
 
 ## Using Candy
 
-To use Candy, go to the [GitHub page](cabinjs.github.io/Candy/).
+To use Candy, go to the [GitHub page](http://cabinjs.github.io/Candy/).
 
 ## Contributing to Candy
 
