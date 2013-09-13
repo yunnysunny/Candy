@@ -4,8 +4,9 @@ date:  2013-12-15
 description: Description of Candy's features
 ----
 
-Candy is a minimal blogging theme for [Cabin](http://cabinjs.com). 
+Candy is a minimal blogging theme for [Cabin](http://cabinjs.com).
 
+The theme's source code is located at the [Candy GitHub repo](https://github.com/CabinJS/Candy).
 
 ## Installation
 
