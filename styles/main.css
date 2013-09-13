@@ -1,5 +1,5 @@
 @import 'http://fonts.googleapis.com/css?family=Merriweather|Open+Sans';
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -838,7 +838,14 @@ body {
   color: #57db9b;
 }
 
-/* line 91, ../../src/styles/_base.scss */
+@media (max-width: 1250px) {
+  /* line 91, ../../src/styles/_base.scss */
+  .github-ribbon {
+    display: none;
+  }
+}
+
+/* line 97, ../../src/styles/_base.scss */
 .cabin {
   position: fixed;
   right: .5em;
@@ -846,18 +853,18 @@ body {
   width: 1.6em;
   opacity: .2;
 }
-/* line 98, ../../src/styles/_base.scss */
+/* line 104, ../../src/styles/_base.scss */
 .cabin:hover {
   opacity: .6;
 }
 @media (max-width: 1250px) {
-  /* line 91, ../../src/styles/_base.scss */
+  /* line 97, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
 }
 
-/* line 108, ../../src/styles/_base.scss */
+/* line 114, ../../src/styles/_base.scss */
 .group:after {
   content: "";
   display: table;
@@ -962,7 +969,7 @@ nav a:hover {
     width: 100%;
     height: auto;
   }
-  /* line 108, ../../src/styles/_base.scss */
+  /* line 114, ../../src/styles/_base.scss */
   nav:after {
     content: "";
     display: table;
@@ -1138,9 +1145,11 @@ code {
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
+  margin-top: 0em;
+  margin-bottom: -0.8em;
 }
 
-/* line 67, ../../src/styles/_post.scss */
+/* line 69, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1148,29 +1157,29 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 70, ../../src/styles/_post.scss */
+/* line 72, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
 }
 
-/* line 75, ../../src/styles/_post.scss */
+/* line 77, ../../src/styles/_post.scss */
 .comments {
   margin-top: 25px;
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 80, ../../src/styles/_post.scss */
+/* line 82, ../../src/styles/_post.scss */
 .comments a {
   color: rgba(57, 56, 56, 0.5);
   text-decoration: none;
 }
-/* line 84, ../../src/styles/_post.scss */
+/* line 86, ../../src/styles/_post.scss */
 .comments a:hover {
   text-decoration: none;
   color: #57db9b;
   opacity: 1;
 }
-/* line 91, ../../src/styles/_post.scss */
+/* line 93, ../../src/styles/_post.scss */
 .comments .icon-bubbles {
   padding: 3px 15px 5px 0;
   float: left;
