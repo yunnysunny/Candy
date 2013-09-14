@@ -87,14 +87,12 @@ pre {
     text-decoration: none;
 
     &:hover {
-      text-decoration: none;
       color: $mainTheme;
-      opacity: 1;
     }
   }
+}
 
-  .icon-bubbles {
-    padding: 3px 15px 5px 0;
-    float: left;
-  }
+.icon-bubbles {
+  padding: 3px 15px 5px 0;
+  float: left;
 }
