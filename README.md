@@ -3,7 +3,7 @@
 
 [![Dependency Status](https://gemnasium.com/CabinJS/Candy.png)](https://gemnasium.com/CabinJS/Candy) [![Travis Status](https://travis-ci.org/CabinJS/Candy.png?branch=master)](https://travis-ci.org/CabinJS/Candy)
 
-![Candy Theme](http://i.imgur.com/JKM27ib.png?1)
+[![Candy Theme](http://i.imgur.com/JKM27ib.png?1)](http://cabinjs.github.io/Candy/)
 
 ## Using Candy
 
