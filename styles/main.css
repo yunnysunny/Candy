@@ -802,7 +802,7 @@ body {
 }
 /* line 57, ../../src/styles/_base.scss */
 .content a:hover {
-  color: #2dd282;
+  color: #2d6fd2;
 }
 @media (max-width: 1250px) {
   /* line 48, ../../src/styles/_base.scss */
@@ -835,7 +835,7 @@ body {
 }
 /* line 86, ../../src/styles/_base.scss */
 .pagination .active-page {
-  color: #57db9b;
+  color: #578cdb;
 }
 
 @media (max-width: 1250px) {
@@ -950,7 +950,7 @@ nav {
   z-index: 100;
   height: 100%;
   top: 0;
-  background: #57db9b;
+  background: #578cdb;
 }
 /* line 8, ../../src/styles/_nav.scss */
 nav a {
@@ -1018,7 +1018,7 @@ nav a:hover {
 
 /* line 59, ../../src/styles/_nav.scss */
 .nav-links {
-  background: #57db9b;
+  background: #578cdb;
   padding: 0 50px;
   font-size: 1.4em;
 }
@@ -1176,7 +1176,7 @@ pre {
 /* line 86, ../../src/styles/_post.scss */
 .comments a:hover {
   text-decoration: none;
-  color: #57db9b;
+  color: #578cdb;
   opacity: 1;
 }
 /* line 93, ../../src/styles/_post.scss */
