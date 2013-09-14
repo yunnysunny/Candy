@@ -757,14 +757,20 @@ table {
   width: 100%;
 }
 
-/* line 25, ../../src/styles/_base.scss */
+/* line 27, ../../src/styles/_base.scss */
+.group {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 31, ../../src/styles/_base.scss */
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 31, ../../src/styles/_base.scss */
+/* line 37, ../../src/styles/_base.scss */
 body {
   margin: 0;
   color: #393838;
@@ -774,25 +780,25 @@ body {
   font-size: 17px;
 }
 @media (max-width: 1250px) {
-  /* line 31, ../../src/styles/_base.scss */
+  /* line 37, ../../src/styles/_base.scss */
   body {
     font-size: 16px;
   }
 }
 @media (max-width: 630px) {
-  /* line 31, ../../src/styles/_base.scss */
+  /* line 37, ../../src/styles/_base.scss */
   body {
     font-size: 12px;
   }
 }
 
-/* line 48, ../../src/styles/_base.scss */
+/* line 54, ../../src/styles/_base.scss */
 .content {
   margin: 0 auto;
   max-width: 680px;
   width: 55%;
 }
-/* line 53, ../../src/styles/_base.scss */
+/* line 59, ../../src/styles/_base.scss */
 .content a {
   color: #393838;
   -webkit-transition: color 0.2s;
@@ -800,49 +806,42 @@ body {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 57, ../../src/styles/_base.scss */
+/* line 63, ../../src/styles/_base.scss */
 .content a:hover {
   color: #2d6fd2;
 }
 @media (max-width: 1250px) {
-  /* line 48, ../../src/styles/_base.scss */
+  /* line 54, ../../src/styles/_base.scss */
   .content {
     margin: 75px auto 25px;
     width: 86%;
   }
 }
 @media (max-width: 630px) {
-  /* line 48, ../../src/styles/_base.scss */
+  /* line 54, ../../src/styles/_base.scss */
   .content {
     margin: 45px auto 15px;
   }
 }
 
-/* line 72, ../../src/styles/_base.scss */
+/* line 78, ../../src/styles/_base.scss */
 .pagination {
   padding: 20px 0;
 }
-/* line 75, ../../src/styles/_base.scss */
+/* line 81, ../../src/styles/_base.scss */
 .pagination li {
   float: left;
 }
-/* line 79, ../../src/styles/_base.scss */
+/* line 85, ../../src/styles/_base.scss */
 .pagination a {
   padding: 10px;
   text-decoration: none;
   font-size: 1.7em;
   font-family: "Open Sans", sans-serif;
 }
-/* line 86, ../../src/styles/_base.scss */
+/* line 92, ../../src/styles/_base.scss */
 .pagination .active-page {
   color: #578cdb;
-}
-
-@media (max-width: 1250px) {
-  /* line 91, ../../src/styles/_base.scss */
-  .github-ribbon {
-    display: none;
-  }
 }
 
 /* line 97, ../../src/styles/_base.scss */
@@ -851,24 +850,19 @@ body {
   right: .5em;
   bottom: .5em;
   width: 1.6em;
-  opacity: .2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
 }
 /* line 104, ../../src/styles/_base.scss */
 .cabin:hover {
-  opacity: .6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
 @media (max-width: 1250px) {
   /* line 97, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
-}
-
-/* line 114, ../../src/styles/_base.scss */
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /*Icon Set: IcoMoon - Free -- http://keyamoon.com/icomoon/*/
@@ -959,7 +953,6 @@ nav a {
 }
 /* line 12, ../../src/styles/_nav.scss */
 nav a:hover {
-  color: white;
   text-decoration: underline;
 }
 @media (max-width: 1250px) {
@@ -968,16 +961,12 @@ nav a:hover {
     overflow: hidden;
     width: 100%;
     height: auto;
-  }
-  /* line 114, ../../src/styles/_base.scss */
-  nav:after {
-    content: "";
-    display: table;
-    clear: both;
+    overflow: hidden;
+    *zoom: 1;
   }
 }
 
-/* line 26, ../../src/styles/_nav.scss */
+/* line 25, ../../src/styles/_nav.scss */
 .name {
   position: relative;
   z-index: 100;
@@ -987,7 +976,7 @@ nav a:hover {
   padding: 0 1.5em;
 }
 @media (max-width: 1250px) {
-  /* line 26, ../../src/styles/_nav.scss */
+  /* line 25, ../../src/styles/_nav.scss */
   .name {
     padding: 0 1em;
     margin: 5px 0;
@@ -995,7 +984,7 @@ nav a:hover {
   }
 }
 
-/* line 41, ../../src/styles/_nav.scss */
+/* line 40, ../../src/styles/_nav.scss */
 .menu {
   text-align: right;
   color: white;
@@ -1005,30 +994,30 @@ nav a:hover {
   padding: .75em .8em;
   font-size: 1.4em;
 }
-/* line 50, ../../src/styles/_nav.scss */
+/* line 49, ../../src/styles/_nav.scss */
 .menu:hover {
   text-decoration: none;
 }
 @media (max-width: 1250px) {
-  /* line 41, ../../src/styles/_nav.scss */
+  /* line 40, ../../src/styles/_nav.scss */
   .menu {
     display: block;
   }
 }
 
-/* line 59, ../../src/styles/_nav.scss */
+/* line 58, ../../src/styles/_nav.scss */
 .nav-links {
   background: #578cdb;
   padding: 0 50px;
   font-size: 1.4em;
 }
-/* line 64, ../../src/styles/_nav.scss */
+/* line 63, ../../src/styles/_nav.scss */
 .nav-links a {
   display: block;
   padding: 0 0 .55em;
 }
 @media (max-width: 1250px) {
-  /* line 59, ../../src/styles/_nav.scss */
+  /* line 58, ../../src/styles/_nav.scss */
   .nav-links {
     padding: 0;
     margin: 0;
@@ -1036,7 +1025,7 @@ nav a:hover {
     right: 0;
     top: 2.3em;
   }
-  /* line 76, ../../src/styles/_nav.scss */
+  /* line 75, ../../src/styles/_nav.scss */
   .nav-links a {
     display: block;
     padding: 0;
@@ -1044,7 +1033,7 @@ nav a:hover {
   }
 }
 
-/* line 84, ../../src/styles/_nav.scss */
+/* line 83, ../../src/styles/_nav.scss */
 .social-media {
   text-align: center;
   position: absolute;
@@ -1053,17 +1042,17 @@ nav a:hover {
   font-size: 1.8em;
   line-height: 2em;
 }
-/* line 92, ../../src/styles/_nav.scss */
+/* line 91, ../../src/styles/_nav.scss */
 .social-media a {
   margin: 0 10px;
 }
-/* line 95, ../../src/styles/_nav.scss */
+/* line 94, ../../src/styles/_nav.scss */
 .social-media a:hover {
   text-decoration: none;
   color: #393838;
 }
 @media (max-width: 1250px) {
-  /* line 84, ../../src/styles/_nav.scss */
+  /* line 83, ../../src/styles/_nav.scss */
   .social-media {
     display: none;
   }
@@ -1177,12 +1166,11 @@ pre {
 }
 /* line 89, ../../src/styles/_post.scss */
 .comments a:hover {
-  text-decoration: none;
   color: #578cdb;
-  opacity: 1;
 }
-/* line 96, ../../src/styles/_post.scss */
-.comments .icon-bubbles {
+
+/* line 95, ../../src/styles/_post.scss */
+.icon-bubbles {
   padding: 3px 15px 5px 0;
   float: left;
 }
