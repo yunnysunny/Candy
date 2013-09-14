@@ -167,7 +167,7 @@ module.exports = function (grunt) {
     grunt.task.run('pages:engineDiff');
   });
 
-  grunt.registerTask('diffEngines', 'Looks at the difference between each template engine\'s html output', function (test) {
+  grunt.registerTask('diffEngines', 'Logs difference between each template engine\'s html output', function (test) {
     var diffResult = require('html-diff')([{
       name: 'Jade',
       path: 'dist'
