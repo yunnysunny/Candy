@@ -1093,34 +1093,36 @@ nav a:hover {
 .post-date {
   position: absolute;
   bottom: 10px;
-  margin: 0;
   right: 0;
   font-size: 1.3em;
   color: rgba(57, 56, 56, 0.5);
 }
 
-/* line 28, ../../src/styles/_post.scss */
+/* line 27, ../../src/styles/_post.scss */
 .post-body {
   margin-bottom: 1.2em;
   font-family: "Merriweather", serif;
   line-height: 1.65em;
 }
-/* line 33, ../../src/styles/_post.scss */
+/* line 32, ../../src/styles/_post.scss */
 .post-body img {
   max-width: 100%;
 }
+/* line 36, ../../src/styles/_post.scss */
+.post-body .anchor {
+  text-decoration: none;
+}
+/* line 39, ../../src/styles/_post.scss */
+.post-body .anchor:hover {
+  color: #393838;
+}
 
-/* line 38, ../../src/styles/_post.scss */
+/* line 45, ../../src/styles/_post.scss */
 .social {
   padding: .55em 0 1.4em;
 }
 
-/* line 42, ../../src/styles/_post.scss */
-.anchor {
-  text-decoration: none;
-}
-
-/* line 47, ../../src/styles/_post.scss */
+/* line 50, ../../src/styles/_post.scss */
 p code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -1132,7 +1134,7 @@ p code {
   border-radius: 3px;
 }
 
-/* line 54, ../../src/styles/_post.scss */
+/* line 57, ../../src/styles/_post.scss */
 code {
   margin: 0;
   padding: 0;
@@ -1141,7 +1143,7 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 62, ../../src/styles/_post.scss */
+/* line 65, ../../src/styles/_post.scss */
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
@@ -1149,7 +1151,7 @@ pre {
   margin-bottom: -0.8em;
 }
 
-/* line 69, ../../src/styles/_post.scss */
+/* line 72, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1157,29 +1159,29 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 72, ../../src/styles/_post.scss */
+/* line 75, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
 }
 
-/* line 77, ../../src/styles/_post.scss */
+/* line 80, ../../src/styles/_post.scss */
 .comments {
   margin-top: 25px;
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 82, ../../src/styles/_post.scss */
+/* line 85, ../../src/styles/_post.scss */
 .comments a {
   color: rgba(57, 56, 56, 0.5);
   text-decoration: none;
 }
-/* line 86, ../../src/styles/_post.scss */
+/* line 89, ../../src/styles/_post.scss */
 .comments a:hover {
   text-decoration: none;
   color: #578cdb;
   opacity: 1;
 }
-/* line 93, ../../src/styles/_post.scss */
+/* line 96, ../../src/styles/_post.scss */
 .comments .icon-bubbles {
   padding: 3px 15px 5px 0;
   float: left;
