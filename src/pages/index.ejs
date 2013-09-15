@@ -10,18 +10,16 @@
 <% }) %>
 
 <ul class="pagination group">
-  <% if (pages.length > 1) {
-      for (var i = currentIndex - 3; i < currentIndex + 3; i++) {
-        var page = pages[i];
-        if (page) {%>
-        <li>
-          <% if (i === currentIndex) { %>
-            <a class="active-page" href="<%= page.url %>" ><%= i + 1 %></a>
-          <% } else { %>
-            <a href="<%= page.url %>"><%= i + 1 %></a>
-          <% } %>
-        </li>
-      <% } %>
+  <% for (var i = 0; i < pages.length; i++) { %>
+    <% var page = pages[i] %>
+    <% if (i === currentIndex - 1) { %>
+      <li class="newer">
+        <a href="<%= page.url %>"> Newer &#8594;</a>
+      </li>
+    <% } else if (i === currentIndex + 1) { %>
+      <li class="older">
+        <a href="<%= page.url %>" class="active-page"> &#8592; Older</a>
+      </li>
     <% } %>
   <% } %>
 </ul>

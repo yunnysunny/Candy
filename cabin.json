@@ -28,7 +28,7 @@
       "url": "blog/posts/:title/",
       "options": {
         "pagination": {
-          "postsPerPage": 3,
+          "postsPerPage": 2,
           "listPage": "src/pages/index.<%= templateLang %>"
         }
       }
@@ -48,7 +48,7 @@
       "url": "blog/posts/:title/",
       "options": {
         "pagination": {
-          "postsPerPage": 3,
+          "postsPerPage": 2,
           "listPage": "src/pages/index.<%= templateEngine %>"
         }
       }

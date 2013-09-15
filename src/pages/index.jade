@@ -9,16 +9,13 @@ block content
         | Comments
 
   ul.pagination.group
-    - if (pages.length > 1) {
-      - for (var i = currentIndex - 3; i < currentIndex + 3; i++) {
-        - var page = pages[i];
-        - if (page) {
-        li
-          - if (i === currentIndex) {
-            a.active-page(href="#{page.url}")= i
-          - } else {
-            a(href="#{page.url}")= i
-          - }
-        - }
+    - for (var i = 0; i < pages.length; i++) {
+      - var page = pages[i];
+      - if (i === currentIndex - 1) {
+        li.newer
+          a(href="#{page.url}") Newer &#8594;
+      - } else if (i === currentIndex + 1) {
+        li.older
+          a.active-page(href="#{page.url}") &#8592; Older
       - }
     - }
