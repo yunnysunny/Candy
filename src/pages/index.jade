@@ -4,7 +4,7 @@ block content
   each post in posts
     mixin post(post)
     div.comments
-      a(href="#{data.baseUrl}#{post.url}#comments")
+      a(href="#{post.url}#comments")
         span.icon-bubbles
         | Comments
 
@@ -14,11 +14,10 @@ block content
         - var page = pages[i];
         - if (page) {
         li
-          - if (i === 0) page.url = '';
           - if (i === currentIndex) {
-            a.active-page(href="#{data.baseUrl}#{page.url}")= i + 1
+            a.active-page(href="#{page.url}")= i
           - } else {
-            a(href="#{data.baseUrl}#{page.url}")= i + 1
+            a(href="#{page.url}")= i
           - }
         - }
       - }
