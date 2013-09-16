@@ -2,7 +2,7 @@
   "name": "candy",
   "version": "0.0.0",
   "dependencies": {
-    "cabin": "~0.2.0",
+    "cabin": "~0.3.0",
     "grunt-pages": "~0.6.0"
   },
   "devDependencies": {
