@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf8">
-    <base href="/Candy/">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="images/cabin.png">
-    <link href="styles/main.css" rel="stylesheet">
-    <title>Candy Theme</title>
-    <meta name="description" content="Description of Candy's features">
-  </head>
-  <body>
-    <nav>
-      <h1 class="name"><a href="">My Name</a></h1><a class="menu icon-menu"></a>
-      <ul class="nav-links">
-        <li class="text-link"><a href="about.html">about</a></li>
-        <li class="text-link"><a href="projects.html">projects</a></li>
-        <li class="text-link"><a href="archives.html">archives</a></li>
-      </ul>
-      <div class="social-media"><a href="https://github.com/colinwren" class="icon-github"></a><a href="https://twitter.com/colinwrenca" class="icon-twitter"></a></div>
-    </nav>
-    <div class="content">
-      <div class="post-head group"><a href="blog/posts/candy-theme/">
-          <h1 class="post-title">Candy Theme</h1></a><span class="post-date">2013 &#183; 12 &#183; 15</span></div>
-      <div class="post-body"><p>Candy is a minimal blogging theme for <a href="http://cabinjs.com">Cabin</a>.</p>
+<!DOCTYPE html><html><head><meta charset="utf8"><base href="/Candy/"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="images/cabin.png"><link href="styles/main.css" rel="stylesheet"><title>Candy Theme</title><meta name="description" content="Description of Candy's features"></head><body><nav><h1 class="name"><a href="">My Name</a></h1><a class="menu icon-menu"></a><ul class="nav-links"><li class="text-link"><a href="about.html">about</a></li><li class="text-link"><a href="projects.html">projects</a></li><li class="text-link"><a href="archives.html">archives</a></li></ul><div class="social-media"><a href="https://github.com/colinwren" class="icon-github"></a><a href="https://twitter.com/colinwrenca" class="icon-twitter"></a></div></nav><div class="content"><div class="post-head group"><a href="blog/posts/candy-theme/"><h1 class="post-title">Candy Theme</h1></a><span class="post-date">2013 &#183; 12 &#183; 15</span></div><div class="post-body"><p>Candy is a minimal blogging theme for <a href="http://cabinjs.com">Cabin</a>.</p>
 <p>The theme&#39;s source code is located at the <a href="https://github.com/CabinJS/Candy">Candy GitHub repo</a>.</p>
 <a name="installation" class="anchor" href="#installation"><h2>Installation</h2>
 </a><p>To use Candy you must have <a href="http://nodejs.org/">Node.js</a>, <a href="http://www.python.org/">Python 2.7</a> (for <a href="http://pygments.org/">Pygments</a>), and <a href="http://compass-style.org/">Compass</a> installed.</p>
@@ -69,7 +45,7 @@
 </a><a name="normalize.css" class="anchor" href="#normalize.css"><h4>normalize.css</h4>
 </a><p><a href="https://github.com/CabinJS/Candy/blob/master/src/styles/normalize.scss">Normailze.css</a> is used to normalize styles across browsers.</p>
 <a name="jquery" class="anchor" href="#jquery"><h4>jQuery</h4>
-</a><p>jQuery is used to toggle the touch optimized menu and toggle the fixed navigation on mobile scrolling in <a href="https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js"><code>src/scripts/main.js</code></a>.</p>
+</a><p>jQuery is used to toggle the touch optimized menu in <a href="https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js"><code>src/scripts/main.js</code></a>.</p>
 <a name="icomoon" class="anchor" href="#icomoon"><h4>IcoMoon</h4>
 </a><p>Candy uses the <a href="http://icomoon.io/app/">IcoMoon App</a> to generate icon fonts. By default it uses icons for social media and comments, but you can easily add and remove icons.</p>
 <p>To alter the icons, go to <a href="http://icomoon.io/app/">this</a> url, and click the below session icon in the bottom right and upload the <code>src/styles/CandyIcoMoonSession.json</code> file.</p>
@@ -87,53 +63,22 @@
 </code></pre>
 <a name="linked-headers-click-me-" class="anchor" href="#linked-headers-click-me-"><h3>Linked headers(click me)</h3>
 </a><p>Link into specific sections of your posts.</p>
-</div>
-      <!-- Social sharing icons-->
-      <div class="social"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-        <div data-size="medium" data-annotation="bubble" data-width="300" class="g-plusone"></div><a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
-      </div>
-      <!-- Disqus comments, Make sure to replace `colinwren` with your account name in the Disqus helper script below-->
-      <div id="comments">
-        <div id="disqus_thread"></div>
-      </div>
-      <!-- Helper scripts for social share icons-->
-      <!-- Hacker News-->
-      <script type="text/javascript">
-        (function(d, t) {
-          var g = d.createElement(t),
-              s = d.getElementsByTagName(t)[0];
-          g.src = '//hnbutton.appspot.com/static/hn.min.js';
-          s.parentNode.insertBefore(g, s);
-        }(document, 'script'));
-        
-      </script>
-      <!-- Twitter-->
-      <script type="text/javascript">
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-        
-      </script>
-      <!-- Google Plus-->
-      <script type="text/javascript">
-        (function() {
-          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-          po.src = 'https://apis.google.com/js/plusone.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-        
-      </script>
-      <!-- Disqus-->
-      <script type="text/javascript">
-        var disqus_shortname = 'colinwren'; // Change this to your Disqus account name
-        
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-    </div><a href="http://cabinjs.com"><img src="images/cabin.png" alt="cabin logo" class="cabin"></a>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-    <script src="scripts/main.js" type="text/javascript"></script>
-    <script>// Add your analytics code here</script>
-  </body>
-</html>
+</div><!-- Social sharing icons--><div class="social"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><div data-size="medium" data-annotation="bubble" data-width="300" class="g-plusone"></div><a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a></div><!-- Disqus comments, Make sure to replace `colinwren` with your account name in the Disqus helper script below--><div id="comments"><div id="disqus_thread"></div></div><!-- Helper scripts for social share icons--><!-- Hacker News--><script type="text/javascript">(function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.src = '//hnbutton.appspot.com/static/hn.min.js';
+  s.parentNode.insertBefore(g, s);
+}(document, 'script'));
+</script><!-- Twitter--><script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script><!-- Google Plus--><script type="text/javascript">(function() {
+  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script><!-- Disqus--><script type="text/javascript">var disqus_shortname = 'colinwren'; // Change this to your Disqus account name
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script></div><a href="http://cabinjs.com"><img src="images/cabin.png" alt="cabin logo" class="cabin"></a><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script><script src="scripts/main.js" type="text/javascript"></script><script>// Add your analytics code here</script></body></html>
