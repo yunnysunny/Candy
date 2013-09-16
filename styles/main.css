@@ -1045,8 +1045,9 @@ nav a:hover {
 /* line 91, ../../src/styles/_nav.scss */
 .social-media a {
   margin: 0 10px;
+  padding: 2px;
 }
-/* line 94, ../../src/styles/_nav.scss */
+/* line 97, ../../src/styles/_nav.scss */
 .social-media a:hover {
   text-decoration: none;
   color: #393838;
