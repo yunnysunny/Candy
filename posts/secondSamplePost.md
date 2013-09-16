@@ -1,6 +1,6 @@
 ----
 title: My second cool blog post
-date:   2013-08-3
+date:   2013-08-7
 description: Sample Candy post using Cupcake Ipsum
 ----
 
