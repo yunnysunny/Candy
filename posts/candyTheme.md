@@ -88,7 +88,7 @@ We provide a number of theme colors out of the box in the [`src/styles/_base.scs
 
 #### jQuery
 
-jQuery is used to toggle the touch optimized menu and toggle the fixed navigation on mobile scrolling in [`src/scripts/main.js`](https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js).
+jQuery is used to toggle the touch optimized menu in [`src/scripts/main.js`](https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js).
 
 #### IcoMoon
 
