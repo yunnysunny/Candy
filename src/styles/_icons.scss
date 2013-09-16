@@ -3,8 +3,8 @@
 
 /*
 Note: To edit icons, go to the following url: http://icomoon.io/app/
-      Then click the stacked circle icon in the bottom right and upload the CandyIcoMoonSession.json file from this folder
-      After updating the icons simply download them and copy the fonts folder along with style.css into this folder and rename style.css to _icons.scss
+      Then click the stacked circle icon in the bottom right and upload the IcoMoon Session.json file from this folder
+      After updating the icons, download them and copy the fonts folder and the style.css into this folder and rename style.css to _icons.scss
 */
 
 @font-face {
@@ -24,7 +24,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus, .icon-bubbles {
+.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus, .icon-bubbles, .icon-link {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -57,4 +57,7 @@ you can use the generic selector below, but it's slower:
 }
 .icon-bubbles:before {
   content: "\e007";
+}
+.icon-link:before {
+  content: "\e008";
 }
