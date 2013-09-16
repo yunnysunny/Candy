@@ -52,6 +52,7 @@ body {
 }
 
 .content {
+  position: relative;
   margin: 0 auto;
   max-width: 680px;
   width: 55%;
@@ -76,22 +77,25 @@ body {
 }
 
 .pagination {
-  padding: 20px 0;
 
   li {
-    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 2.2em 0 1.8em;
+    position: absolute;
   }
 
   a {
-    padding: 10px;
     text-decoration: none;
-    font-size: 1.7em;
-    font-family: $headerFont;
   }
+}
 
-  .active-page {
-    color: $mainTheme;
-  }
+.older {
+  left: 0;
+}
+
+.newer {
+  right: 0;
 }
 
 .cabin {

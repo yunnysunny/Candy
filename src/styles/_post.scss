@@ -85,14 +85,10 @@ pre {
   a {
     color: $lightTextColor;
     text-decoration: none;
-
-    &:hover {
-      color: $mainTheme;
-    }
   }
-}
 
-.icon-bubbles {
-  padding: 3px 15px 5px 0;
-  float: left;
+  .icon-bubbles {
+    padding: 3px 15px 5px 0;
+    float: left;
+  }
 }
