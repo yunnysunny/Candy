@@ -1,4 +1,28 @@
-<!DOCTYPE html><html><head><meta charset="utf8"><base href="/Candy/"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="images/cabin.png"><link href="styles/main.css" rel="stylesheet"><title>Candy Theme</title><meta name="description" content="Description of Candy's features"></head><body><nav><h1 class="name"><a href="">My Name</a></h1><a class="menu icon-menu"></a><ul class="nav-links"><li class="text-link"><a href="about.html">about</a></li><li class="text-link"><a href="projects.html">projects</a></li><li class="text-link"><a href="archives.html">archives</a></li></ul><div class="social-media"><a href="https://github.com/colinwren" class="icon-github"></a><a href="https://twitter.com/colinwrenca" class="icon-twitter"></a></div></nav><div class="content"><div class="post-head group"><a href="blog/posts/candy-theme/"><h1 class="post-title">Candy Theme</h1></a><span class="post-date">2013 &#183; 12 &#183; 15</span></div><div class="post-body"><p>Candy is a minimal blogging theme for <a href="http://cabinjs.com">Cabin</a>.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <base href="/Candy/">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="images/cabin.png">
+    <link href="styles/main.css" rel="stylesheet">
+    <title>Candy Theme</title>
+    <meta name="description" content="Description of Candy's features">
+  </head>
+  <body>
+    <nav>
+      <h1 class="name"><a href="">My Name</a></h1><a class="menu icon-menu"></a>
+      <ul class="nav-links">
+        <li class="text-link"><a href="about.html">about</a></li>
+        <li class="text-link"><a href="projects.html">projects</a></li>
+        <li class="text-link"><a href="archives.html">archives</a></li>
+      </ul>
+      <div class="social-media"><a href="https://github.com/colinwren" class="icon-github"></a><a href="https://twitter.com/colinwrenca" class="icon-twitter"></a></div>
+    </nav>
+    <div class="content">
+      <div class="post-head group"><a href="blog/posts/candy-theme/">
+          <h1 class="post-title">Candy Theme</h1></a><span class="post-date">2013 &#183; 12 &#183; 15</span></div>
+      <div class="post-body"><p>Candy is a minimal blogging theme for <a href="http://cabinjs.com">Cabin</a>.</p>
 <p>The theme&#39;s source code is located at the <a href="https://github.com/CabinJS/Candy">Candy GitHub repo</a>.</p>
 <a name="installation" class="anchor" href="#installation"><h2>Installation</h2>
 </a><p>To use Candy you must have <a href="http://nodejs.org/">Node.js</a>, <a href="http://www.python.org/">Python 2.7</a> (for <a href="http://pygments.org/">Pygments</a>), and <a href="http://compass-style.org/">Compass</a> installed.</p>
@@ -21,7 +45,7 @@
 </a><a name="expected-files-to-edit" class="anchor" href="#expected-files-to-edit"><h3>Expected files to edit</h3>
 </a><p>There are parts of the Candy theme which you are expected to edit when building your site. Here they are:</p>
 <a name="layouts" class="anchor" href="#layouts"><h4>Layouts</h4>
-</a><p>You are expected to update the social media links with your GitHub username and Twitter handle in the <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L35-L36"><code>src/layouts/base.jade</code></a> or <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L35-L36"><code>src/layouts/_header.ejs</code></a> file. We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the <a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27"><code>src/styles/_icon.scss</code></a> file, and here is an example of how you would add a link to your Pinterest profile:</p>
+</a><p>You are expected to update the social media links with your GitHub username and Twitter handle in the <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L36-L37"><code>src/layouts/base.jade</code></a> or <a href="https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L36-L37"><code>src/layouts/_header.ejs</code></a> file. We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the <a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27"><code>src/styles/_icon.scss</code></a> file, and here is an example of how you would add a link to your Pinterest profile:</p>
 <pre><code class="lang-html"><div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://pinterest.com/chrisawren/&quot;</span> <span class="na">class=</span><span class="s">&quot;icon-pinterest&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
 </pre></div>
 </code></pre>
@@ -40,10 +64,10 @@
 <p>DateString which is parsed and displayed as the publishing date of the post.</p>
 <p>To learn more about post metadata, check out <a href="https://github.com/CabinJS/grunt-pages#authoring-posts">grunt-pages</a>.</p>
 <a name="changing-the-main-theme-color" class="anchor" href="#changing-the-main-theme-color"><h3>Changing the main theme color</h3>
-</a><p>We provide a number of theme colors out of the box in the <a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_base.scss#L1-L6"><code>src/styles/_base.scss</code></a> file. To change the color, simply change the value of the <code>$mainTheme</code> Sass variable.</p>
+</a><p>We provide a number of theme colors out of the box in the <a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_base.scss#L1-L5"><code>src/styles/_base.scss</code></a> file. To change the color, simply change the value of the <code>$mainTheme</code> Sass variable.</p>
 <a name="included-libraries-tools" class="anchor" href="#included-libraries-tools"><h3>Included libraries/tools</h3>
 </a><a name="normalize.css" class="anchor" href="#normalize.css"><h4>normalize.css</h4>
-</a><p><a href="https://github.com/CabinJS/Candy/blob/master/src/styles/normalize.scss">Normailze.css</a> is used to normalize styles across browsers.</p>
+</a><p><a href="https://github.com/CabinJS/Candy/blob/master/src/styles/_normalize.scss">Normalize.css</a> is used to normalize styles across browsers.</p>
 <a name="jquery" class="anchor" href="#jquery"><h4>jQuery</h4>
 </a><p>jQuery is used to toggle the touch optimized menu in <a href="https://github.com/CabinJS/Candy/blob/master/src/scripts/main.js"><code>src/scripts/main.js</code></a>.</p>
 <a name="icomoon" class="anchor" href="#icomoon"><h4>IcoMoon</h4>
@@ -63,22 +87,53 @@
 </code></pre>
 <a name="linked-headers-click-me-" class="anchor" href="#linked-headers-click-me-"><h3>Linked headers(click me)</h3>
 </a><p>Link into specific sections of your posts.</p>
-</div><!-- Social sharing icons--><div class="social"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><div data-size="medium" data-annotation="bubble" data-width="300" class="g-plusone"></div><a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a></div><!-- Disqus comments, Make sure to replace `colinwren` with your account name in the Disqus helper script below--><div id="comments"><div id="disqus_thread"></div></div><!-- Helper scripts for social share icons--><!-- Hacker News--><script type="text/javascript">(function(d, t) {
-  var g = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-  g.src = '//hnbutton.appspot.com/static/hn.min.js';
-  s.parentNode.insertBefore(g, s);
-}(document, 'script'));
-</script><!-- Twitter--><script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script><!-- Google Plus--><script type="text/javascript">(function() {
-  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-  po.src = 'https://apis.google.com/js/plusone.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script><!-- Disqus--><script type="text/javascript">var disqus_shortname = 'colinwren'; // Change this to your Disqus account name
-
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();</script></div><a href="http://cabinjs.com"><img src="images/cabin.png" alt="cabin logo" class="cabin"></a><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script><script src="scripts/main.js" type="text/javascript"></script><script>// Add your analytics code here</script></body></html>
+</div>
+      <!-- Social sharing icons-->
+      <div class="social"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+        <div data-size="medium" data-annotation="bubble" data-width="300" class="g-plusone"></div><a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
+      </div>
+      <!-- Disqus comments, Make sure to replace `colinwren` with your account name in the Disqus helper script below-->
+      <div id="comments">
+        <div id="disqus_thread"></div>
+      </div>
+      <!-- Helper scripts for social share icons-->
+      <!-- Hacker News-->
+      <script type="text/javascript">
+        (function(d, t) {
+          var g = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+          g.src = '//hnbutton.appspot.com/static/hn.min.js';
+          s.parentNode.insertBefore(g, s);
+        }(document, 'script'));
+        
+      </script>
+      <!-- Twitter-->
+      <script type="text/javascript">
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        
+      </script>
+      <!-- Google Plus-->
+      <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+        
+      </script>
+      <!-- Disqus-->
+      <script type="text/javascript">
+        var disqus_shortname = 'colinwren'; // Change this to your Disqus account name
+        
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div><a href="http://cabinjs.com"><img src="images/cabin.png" alt="cabin logo" class="cabin"></a>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script>// Add your analytics code here</script>
+  </body>
+</html>
