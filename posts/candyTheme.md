@@ -1,8 +1,8 @@
-----
-title: Candy Theme
-date:  2013-12-15
-description: Description of Candy's features
-----
+{
+  title: "Candy Theme",
+  date:  "2013-12-15",
+  description: "Description of Candy's features"
+}
 
 Candy is a minimal blogging theme for [Cabin](http://cabinjs.com).
 

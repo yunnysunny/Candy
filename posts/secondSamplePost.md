@@ -1,8 +1,8 @@
-----
-title: My second cool blog post
-date:   2013-08-7
-description: Sample Candy post using Cupcake Ipsum
-----
+{
+  title: "My second cool blog post",
+  date:   "2013-8-7",
+  description: "Sample Candy post using Cupcake Ipsum"
+}
 
 Some [Cupcake Ipsum](http://cupcakeipsum.com) to brighten your day!
 
