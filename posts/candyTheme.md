@@ -94,11 +94,11 @@ jQuery is used to toggle the touch optimized menu in [`src/scripts/main.js`](htt
 
 Candy uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. By default it uses icons for social media and comments, but you can easily add and remove icons.
 
-To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the `src/styles/CandyIcoMoonSession.json` file.
+To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the `src/styles/IcoMoon Session.json` file.
 
 <img src="http://i.imgur.com/7fmXyfF.png">
 
-After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the `src/styles/CandyIcoMoonSession.json` by clicking `Store Session` after clicking the session icon to allow for future icon changes.
+After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the `src/styles/IcoMoon Session.json` by clicking `Store Session` after clicking the session icon to allow for future icon changes.
 
 ## Markdown
 Cabin supports [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown) for its static site generation. It has awesome features like:
