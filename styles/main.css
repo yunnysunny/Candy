@@ -1,5 +1,5 @@
 @import 'http://fonts.googleapis.com/css?family=Merriweather|Open+Sans';
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -872,8 +872,8 @@ body {
 /*License:  CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/*/
 /*
 Note: To edit icons, go to the following url: http://icomoon.io/app/
-      Then click the stacked circle icon in the bottom right and upload the CandyIcoMoonSession.json file from this folder
-      After updating the icons simply download them and copy the fonts folder along with style.css into this folder and rename style.css to _icons.scss
+      Then click the stacked circle icon in the bottom right and upload the IcoMoon Session.json file from this folder
+      After updating the icons, download them and copy the fonts folder and the style.css into this folder and rename style.css to _icons.scss
 */
 @font-face {
   font-family: 'icomoon';
@@ -890,7 +890,7 @@ you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
 /* line 27, ../../src/styles/_icons.scss */
-.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus, .icon-bubbles {
+.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus, .icon-bubbles, .icon-link, .header-link {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -939,6 +939,11 @@ you can use the generic selector below, but it's slower:
 /* line 58, ../../src/styles/_icons.scss */
 .icon-bubbles:before {
   content: "\e007";
+}
+
+/* line 61, ../../src/styles/_icons.scss */
+.icon-link:before, .header-link:before {
+  content: "\e008";
 }
 
 /* line 1, ../../src/styles/_nav.scss */
@@ -1104,18 +1109,34 @@ nav a:hover {
 /* line 36, ../../src/styles/_post.scss */
 .post-body .anchor {
   text-decoration: none;
+  position: absolute;
+  margin-left: -1.7em;
+  padding-left: 1.7em;
+  outline: none;
 }
-/* line 39, ../../src/styles/_post.scss */
+/* line 43, ../../src/styles/_post.scss */
 .post-body .anchor:hover {
   color: #393838;
 }
+/* line 50, ../../src/styles/_post.scss */
+.post-body h1:hover .header-link, .post-body h2:hover .header-link, .post-body h3:hover .header-link,
+.post-body h4:hover .header-link, .post-body h5:hover .header-link, .post-body h6:hover .header-link {
+  visibility: visible;
+}
 
-/* line 45, ../../src/styles/_post.scss */
+/* line 56, ../../src/styles/_post.scss */
+.header-link {
+  margin-left: -1.7em;
+  font-size: .65em;
+  visibility: hidden;
+}
+
+/* line 63, ../../src/styles/_post.scss */
 .social {
   padding: .55em 0 1.4em;
 }
 
-/* line 50, ../../src/styles/_post.scss */
+/* line 68, ../../src/styles/_post.scss */
 p code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -1127,7 +1148,7 @@ p code {
   border-radius: 3px;
 }
 
-/* line 57, ../../src/styles/_post.scss */
+/* line 75, ../../src/styles/_post.scss */
 code {
   margin: 0;
   padding: 0;
@@ -1136,7 +1157,7 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 65, ../../src/styles/_post.scss */
+/* line 83, ../../src/styles/_post.scss */
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
@@ -1144,7 +1165,7 @@ pre {
   margin-bottom: -0.8em;
 }
 
-/* line 72, ../../src/styles/_post.scss */
+/* line 90, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1152,23 +1173,23 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 75, ../../src/styles/_post.scss */
+/* line 93, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
 }
 
-/* line 80, ../../src/styles/_post.scss */
+/* line 98, ../../src/styles/_post.scss */
 .comments {
   margin-top: 25px;
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 85, ../../src/styles/_post.scss */
+/* line 103, ../../src/styles/_post.scss */
 .comments a {
   color: #b8b7b7;
   text-decoration: none;
 }
-/* line 90, ../../src/styles/_post.scss */
+/* line 108, ../../src/styles/_post.scss */
 .comments .icon-bubbles {
   padding: 3px 15px 5px 0;
   float: left;
