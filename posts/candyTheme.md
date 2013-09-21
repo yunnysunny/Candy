@@ -111,5 +111,5 @@ function praise (thing) {
 
 praise('Candy');
 ```
-### Linked headers(click me)
+### Linked headers(link on the left)
 Link into specific sections of your posts.
