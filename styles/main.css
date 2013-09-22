@@ -1,5 +1,5 @@
 @import 'http://fonts.googleapis.com/css?family=Merriweather|Open+Sans';
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -821,7 +821,7 @@ body {
 @media (max-width: 630px) {
   /* line 55, ../../src/styles/_base.scss */
   .content {
-    margin: 45px auto 15px;
+    margin: 65px auto 15px;
   }
 }
 
@@ -1025,6 +1025,20 @@ nav a:hover {
   padding: 0 0 .55em;
 }
 @media (max-width: 1250px) {
+  /* line 63, ../../src/styles/_nav.scss */
+  .nav-links a {
+    display: block;
+    padding: 0;
+    margin: .55em .9em;
+  }
+}
+@media (max-width: 630px) {
+  /* line 63, ../../src/styles/_nav.scss */
+  .nav-links a {
+    margin: .85em 1.2em;
+  }
+}
+@media (max-width: 1250px) {
   /* line 58, ../../src/styles/_nav.scss */
   .nav-links {
     padding: 0;
@@ -1033,15 +1047,9 @@ nav a:hover {
     right: 0;
     top: 2.3em;
   }
-  /* line 75, ../../src/styles/_nav.scss */
-  .nav-links a {
-    display: block;
-    padding: 0;
-    margin: .55em .9em;
-  }
 }
 
-/* line 83, ../../src/styles/_nav.scss */
+/* line 87, ../../src/styles/_nav.scss */
 .social-media {
   text-align: center;
   position: absolute;
@@ -1050,18 +1058,18 @@ nav a:hover {
   font-size: 1.8em;
   line-height: 2em;
 }
-/* line 91, ../../src/styles/_nav.scss */
+/* line 95, ../../src/styles/_nav.scss */
 .social-media a {
   margin: 0 10px;
   padding: 2px;
 }
-/* line 97, ../../src/styles/_nav.scss */
+/* line 101, ../../src/styles/_nav.scss */
 .social-media a:hover {
   text-decoration: none;
   color: #393838;
 }
 @media (max-width: 1250px) {
-  /* line 83, ../../src/styles/_nav.scss */
+  /* line 87, ../../src/styles/_nav.scss */
   .social-media {
     display: none;
   }
