@@ -831,27 +831,24 @@ body {
   width: 100%;
 }
 /* line 84, ../../src/styles/_base.scss */
-.pagination span {
+.pagination a {
   font-size: 1.5em;
   font-weight: bold;
   padding: 2.2em 0 1.8em;
-}
-/* line 90, ../../src/styles/_base.scss */
-.pagination a {
   text-decoration: none;
 }
 
-/* line 95, ../../src/styles/_base.scss */
+/* line 92, ../../src/styles/_base.scss */
 .older {
   float: left;
 }
 
-/* line 99, ../../src/styles/_base.scss */
+/* line 96, ../../src/styles/_base.scss */
 .newer {
   float: right;
 }
 
-/* line 103, ../../src/styles/_base.scss */
+/* line 100, ../../src/styles/_base.scss */
 .cabin {
   position: absolute;
   right: .5em;
@@ -860,13 +857,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 110, ../../src/styles/_base.scss */
+/* line 107, ../../src/styles/_base.scss */
 .cabin:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 @media (max-width: 1250px) {
-  /* line 103, ../../src/styles/_base.scss */
+  /* line 100, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
