@@ -156,9 +156,9 @@ module.exports = function (grunt) {
   grunt.registerTask('buildEngines', 'Builds template engines to make sure outputted html is the same', function () {
     var ejsGruntPagesConfig = JSON.parse(grunt.template.process(grunt.file.read('cabin.json'), {
           data: {
-            templateLang: 'ejs'
+            templateEngine: 'ejs'
           }
-        })).gruntPages.posts;
+        })).gruntPagesConfig.posts;
 
     ejsGruntPagesConfig.options.templateEngine = 'ejs';
     ejsGruntPagesConfig.dest = '.engineDiff';
