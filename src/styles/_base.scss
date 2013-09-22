@@ -81,13 +81,10 @@ body {
 .pagination {
   width: 100%;
 
-  span {
+  a {
     font-size: 1.5em;
     font-weight: bold;
     padding: 2.2em 0 1.8em;
-  }
-
-  a {
     text-decoration: none;
   }
 }
