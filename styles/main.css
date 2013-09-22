@@ -1,5 +1,5 @@
 @import 'http://fonts.googleapis.com/css?family=Merriweather|Open+Sans';
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -773,6 +773,7 @@ ul {
 /* line 38, ../../src/styles/_base.scss */
 body {
   margin: 0;
+  position: relative;
   color: #393838;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -792,14 +793,14 @@ body {
   }
 }
 
-/* line 55, ../../src/styles/_base.scss */
+/* line 56, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 0 auto;
   max-width: 680px;
   width: 55%;
 }
-/* line 61, ../../src/styles/_base.scss */
+/* line 62, ../../src/styles/_base.scss */
 .content a {
   color: #393838;
   -webkit-transition: color 0.2s;
@@ -807,62 +808,65 @@ body {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 65, ../../src/styles/_base.scss */
+/* line 66, ../../src/styles/_base.scss */
 .content a:hover {
   color: #578cdb;
 }
 @media (max-width: 1250px) {
-  /* line 55, ../../src/styles/_base.scss */
+  /* line 56, ../../src/styles/_base.scss */
   .content {
     margin: 75px auto 25px;
     width: 86%;
   }
 }
 @media (max-width: 630px) {
-  /* line 55, ../../src/styles/_base.scss */
+  /* line 56, ../../src/styles/_base.scss */
   .content {
     margin: 65px auto 15px;
   }
 }
 
-/* line 82, ../../src/styles/_base.scss */
-.pagination li {
+/* line 81, ../../src/styles/_base.scss */
+.pagination {
+  width: 100%;
+}
+/* line 84, ../../src/styles/_base.scss */
+.pagination span {
   font-size: 1.5em;
   font-weight: bold;
   padding: 2.2em 0 1.8em;
-  position: absolute;
 }
-/* line 89, ../../src/styles/_base.scss */
+/* line 90, ../../src/styles/_base.scss */
 .pagination a {
   text-decoration: none;
 }
 
-/* line 94, ../../src/styles/_base.scss */
+/* line 95, ../../src/styles/_base.scss */
 .older {
-  left: 0;
+  float: left;
 }
 
-/* line 98, ../../src/styles/_base.scss */
+/* line 99, ../../src/styles/_base.scss */
 .newer {
-  right: 0;
+  float: right;
 }
 
-/* line 102, ../../src/styles/_base.scss */
+/* line 103, ../../src/styles/_base.scss */
 .cabin {
-  position: fixed;
+  position: absolute;
   right: .5em;
-  bottom: .5em;
-  width: 1.6em;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2;
+  bottom: .2em;
+  width: 1.8em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
 }
-/* line 109, ../../src/styles/_base.scss */
+/* line 110, ../../src/styles/_base.scss */
 .cabin:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 @media (max-width: 1250px) {
-  /* line 102, ../../src/styles/_base.scss */
+  /* line 103, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
