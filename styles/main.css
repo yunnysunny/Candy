@@ -976,7 +976,6 @@ nav a:hover {
 
 /* line 25, ../../src/styles/_nav.scss */
 .name {
-  position: relative;
   z-index: 100;
   font-weight: normal;
   font-size: 2em;
@@ -992,7 +991,7 @@ nav a:hover {
   }
 }
 
-/* line 40, ../../src/styles/_nav.scss */
+/* line 39, ../../src/styles/_nav.scss */
 .menu {
   text-align: right;
   color: white;
@@ -1002,30 +1001,30 @@ nav a:hover {
   padding: .75em .8em;
   font-size: 1.4em;
 }
-/* line 49, ../../src/styles/_nav.scss */
+/* line 48, ../../src/styles/_nav.scss */
 .menu:hover {
   text-decoration: none;
 }
 @media (max-width: 1250px) {
-  /* line 40, ../../src/styles/_nav.scss */
+  /* line 39, ../../src/styles/_nav.scss */
   .menu {
     display: block;
   }
 }
 
-/* line 58, ../../src/styles/_nav.scss */
+/* line 57, ../../src/styles/_nav.scss */
 .nav-links {
   background: #578cdb;
   padding: 0 50px;
   font-size: 1.4em;
 }
-/* line 63, ../../src/styles/_nav.scss */
+/* line 62, ../../src/styles/_nav.scss */
 .nav-links a {
   display: block;
   padding: 0 0 .55em;
 }
 @media (max-width: 1250px) {
-  /* line 63, ../../src/styles/_nav.scss */
+  /* line 62, ../../src/styles/_nav.scss */
   .nav-links a {
     display: block;
     padding: 0;
@@ -1033,13 +1032,13 @@ nav a:hover {
   }
 }
 @media (max-width: 630px) {
-  /* line 63, ../../src/styles/_nav.scss */
+  /* line 62, ../../src/styles/_nav.scss */
   .nav-links a {
     margin: .85em 1.2em;
   }
 }
 @media (max-width: 1250px) {
-  /* line 58, ../../src/styles/_nav.scss */
+  /* line 57, ../../src/styles/_nav.scss */
   .nav-links {
     padding: 0;
     margin: 0;
@@ -1049,7 +1048,7 @@ nav a:hover {
   }
 }
 
-/* line 87, ../../src/styles/_nav.scss */
+/* line 86, ../../src/styles/_nav.scss */
 .social-media {
   text-align: center;
   position: absolute;
@@ -1058,18 +1057,18 @@ nav a:hover {
   font-size: 1.8em;
   line-height: 2em;
 }
-/* line 95, ../../src/styles/_nav.scss */
+/* line 94, ../../src/styles/_nav.scss */
 .social-media a {
   margin: 0 10px;
   padding: 2px;
 }
-/* line 101, ../../src/styles/_nav.scss */
+/* line 100, ../../src/styles/_nav.scss */
 .social-media a:hover {
   text-decoration: none;
   color: #393838;
 }
 @media (max-width: 1250px) {
-  /* line 87, ../../src/styles/_nav.scss */
+  /* line 86, ../../src/styles/_nav.scss */
   .social-media {
     display: none;
   }
