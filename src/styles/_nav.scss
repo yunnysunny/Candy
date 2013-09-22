@@ -63,6 +63,16 @@ nav {
   a {
     display: block;
     padding: 0 0 .55em;
+
+    @include breakpoint(big-phone) {
+      display: block;
+      padding: 0;
+      margin: .55em .9em;
+    }
+
+    @include breakpoint(small-phone) {
+      margin: .85em 1.2em;
+    }
   }
 
   @include breakpoint(big-phone) {
@@ -71,12 +81,6 @@ nav {
     position: absolute;
     right: 0;
     top: 2.3em;
-
-    a {
-      display: block;
-      padding: 0;
-      margin: .55em .9em;
-    }
   }
 }
 
