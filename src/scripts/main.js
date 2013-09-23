@@ -9,14 +9,12 @@ $(function() {
 
   // Toggle the nav menu list when the user clicks the nav menu button
   $('.menu').on(hitEvent, function () {
-    if ($navBar.css('overflow') !== 'visible') {
-      $navBar.css('overflow', 'visible');
-    } else {
-      $navBar.css('overflow', 'hidden');
-    }
+    $navBar.toggleClass('nav-show');
   });
 
   $('.content').on(hitEvent, function(event) {
-    $navBar.css('overflow', 'hidden');
+    if ($navBar.hasClass('nav-show')) {
+      $navBar.removeClass('nav-show');
+    }
   });
 });
