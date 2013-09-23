@@ -44,7 +44,7 @@ describe('Candy theme', function () {
 
       gruntBuildProcess.on('close', function () {
         fs.existsSync(EJSSiteName + '/dist/index.html').should.be.ok;
-        fs.existsSync(EJSSiteName + '/dist/blog/posts/my-cool-blog-post/index.html').should.be.ok;
+        fs.existsSync(EJSSiteName + '/dist/posts/my-cool-blog-post/index.html').should.be.ok;
         fs.existsSync(EJSSiteName + '/dist/styles/main.css').should.be.ok;
         done();
       });
@@ -63,7 +63,7 @@ describe('Candy theme', function () {
 
       gruntBuildProcess.on('close', function () {
         fs.existsSync(JadeSiteName + '/dist/index.html').should.be.ok;
-        fs.existsSync(JadeSiteName + '/dist/blog/posts/my-cool-blog-post/index.html').should.be.ok;
+        fs.existsSync(JadeSiteName + '/dist/posts/my-cool-blog-post/index.html').should.be.ok;
         fs.existsSync(JadeSiteName + '/dist/styles/main.css').should.be.ok;
         done();
       });
