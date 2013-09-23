@@ -32,7 +32,9 @@ cd blog && grunt
 
 This will build your site, start a static file server, open a browser tab with the site's homepage, and start a watch process to rebuild your site when source files change.
 
-Try editing a markdown file in the `posts` folder or css in the `src/styles` folder and upon saving, your site will automatically be rebuilt with the updated content/styles. When you edit markdown, your browser will automatically refresh to view new content, and when editing styles, they will be injected directly into the page for an immediate update.
+Try editing a markdown file in the `posts` folder or CSS in the `src/styles` folder and upon saving, your site will automatically be rebuilt with the updated content/styles. When you edit markdown, your browser will automatically refresh to view new content, and when editing styles, they will be injected directly into the page for an immediate update.
+
+Once you are happy with the state of your site, you can deploy the contents of the `dist` folder using one of Cabin's [deployment options](http://www.cabinjs.com/#recommended-deployment-tools).
 
 **Note: In the future, you can build your site by running the `grunt` command in the `blog` folder.**
 
@@ -44,7 +46,7 @@ There are parts of the Candy theme which you are expected to edit when building 
 
 #### Layouts
 
-You are expected to update the social media links with your GitHub username and Twitter handle in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L36-L37) or [`src/layouts/_header.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L36-L37) file. We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the [`src/styles/_icon.scss`](https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27) file, and here is an example of how you would add a link to your Pinterest profile:
+You are expected to update the social media links with your GitHub username and Twitter handle in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L35-L36) or [`src/layouts/_header.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L35-L36) file. We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the [`src/styles/_icon.scss`](https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27) file, and here is an example of how you would add a link to your Pinterest profile:
 
 ```html
 <a href="http://pinterest.com/chrisawren/" class="icon-pinterest"></a>
@@ -99,6 +101,10 @@ To alter the icons, go to [this](http://icomoon.io/app/) url, and click the belo
 <img src="http://i.imgur.com/7fmXyfF.png">
 
 After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the `src/styles/IcoMoon Session.json` by clicking `Store Session` after clicking the session icon to allow for future icon changes.
+
+## RSS
+
+If you would like to generate an RSS feed, check out grunt-pages' [RSS option](https://github.com/CabinJS/grunt-pages#rss) and add it to your Gruntfile.
 
 ## Markdown
 Cabin supports [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown) for its static site generation. It has awesome features like:
