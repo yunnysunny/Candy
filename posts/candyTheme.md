@@ -32,7 +32,9 @@ cd blog && grunt
 
 This will build your site, start a static file server, open a browser tab with the site's homepage, and start a watch process to rebuild your site when source files change.
 
-Try editing a markdown file in the `posts` folder or css in the `src/styles` folder and upon saving, your site will automatically be rebuilt with the updated content/styles. When you edit markdown, your browser will automatically refresh to view new content, and when editing styles, they will be injected directly into the page for an immediate update.
+Try editing a markdown file in the `posts` folder or CSS in the `src/styles` folder and upon saving, your site will automatically be rebuilt with the updated content/styles. When you edit markdown, your browser will automatically refresh to view new content, and when editing styles, they will be injected directly into the page for an immediate update.
+
+Once you are happy with the state of your site, you can deploy the contents of the `dist` folder using one of Cabin's [deployment options](http://www.cabinjs.com/#recommended-deployment-tools).
 
 **Note: In the future, you can build your site by running the `grunt` command in the `blog` folder.**
 
