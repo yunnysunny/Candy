@@ -773,7 +773,6 @@ ul {
 /* line 38, ../../src/styles/_base.scss */
 body {
   margin: 0;
-  position: relative;
   color: #393838;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -793,14 +792,14 @@ body {
   }
 }
 
-/* line 56, ../../src/styles/_base.scss */
+/* line 55, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 0 auto;
   max-width: 680px;
   width: 55%;
 }
-/* line 62, ../../src/styles/_base.scss */
+/* line 61, ../../src/styles/_base.scss */
 .content a {
   color: #393838;
   -webkit-transition: color 0.2s;
@@ -808,29 +807,29 @@ body {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 66, ../../src/styles/_base.scss */
+/* line 65, ../../src/styles/_base.scss */
 .content a:hover {
   color: #578cdb;
 }
 @media (max-width: 1250px) {
-  /* line 56, ../../src/styles/_base.scss */
+  /* line 55, ../../src/styles/_base.scss */
   .content {
     margin: 75px auto 25px;
     width: 86%;
   }
 }
 @media (max-width: 630px) {
-  /* line 56, ../../src/styles/_base.scss */
+  /* line 55, ../../src/styles/_base.scss */
   .content {
     margin: 65px auto 15px;
   }
 }
 
-/* line 81, ../../src/styles/_base.scss */
+/* line 80, ../../src/styles/_base.scss */
 .pagination {
   width: 100%;
 }
-/* line 84, ../../src/styles/_base.scss */
+/* line 83, ../../src/styles/_base.scss */
 .pagination a {
   font-size: 1.5em;
   font-weight: bold;
@@ -838,32 +837,32 @@ body {
   text-decoration: none;
 }
 
-/* line 92, ../../src/styles/_base.scss */
+/* line 91, ../../src/styles/_base.scss */
 .older {
   float: left;
 }
 
-/* line 96, ../../src/styles/_base.scss */
+/* line 95, ../../src/styles/_base.scss */
 .newer {
   float: right;
 }
 
-/* line 100, ../../src/styles/_base.scss */
+/* line 99, ../../src/styles/_base.scss */
 .cabin {
-  position: absolute;
+  position: fixed;
   right: .5em;
   bottom: .2em;
   width: 1.8em;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
 }
-/* line 107, ../../src/styles/_base.scss */
+/* line 106, ../../src/styles/_base.scss */
 .cabin:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 @media (max-width: 1250px) {
-  /* line 100, ../../src/styles/_base.scss */
+  /* line 99, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
