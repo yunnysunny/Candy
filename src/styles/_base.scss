@@ -37,7 +37,6 @@ ul {
 
 body {
   margin: 0;
-  position: relative;
   color: $baseTextColor;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -98,11 +97,11 @@ body {
 }
 
 .cabin {
-  position: absolute;
+  position: fixed;
   right: .5em;
   bottom: .2em;
   width: 1.8em;
-  @include opacity(.4);
+  @include opacity(.2);
 
   &:hover {
     @include opacity(.6);
