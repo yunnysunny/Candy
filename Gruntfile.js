@@ -120,7 +120,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', function(target) {
     if (target === 'GHPages') {
-      gruntPagesConfig.options.data.baseUrl = '/Candy/';
+      gruntPagesConfig.posts.options.data.baseUrl = '/Candy/';
     }
 
     grunt.task.run([
