@@ -1,6 +1,6 @@
 {
   title: "Markdown Test",
-  date:   "2013-08-3",
+  date:   "2013-08-4",
   description: "Posting using all supported markdown features"
 }
 
