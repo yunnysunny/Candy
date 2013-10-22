@@ -39,6 +39,11 @@ nav {
     margin: 5px 0;
     float: left;
   }
+
+  @include breakpoint(small-phone) {
+    font-size: 1.4em;
+    line-height: 2em;
+  }
 }
 
 .menu {
