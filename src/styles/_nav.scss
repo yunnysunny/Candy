@@ -32,7 +32,7 @@ nav {
   font-weight: normal;
   font-size: 2em;
   margin: 30px 0;
-  text-align: center;
+  padding-left: 40px;
 
   @include breakpoint(big-phone) {
     padding: 0 1em;
@@ -67,7 +67,7 @@ nav {
 .nav-links {
   list-style: none;
   background: $mainTheme;
-  padding: 0 50px;
+  padding-left: 40px;
   font-size: 1.4em;
 
   a {
