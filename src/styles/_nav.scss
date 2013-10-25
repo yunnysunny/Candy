@@ -27,6 +27,9 @@ nav {
   overflow: visible;
 }
 
+$mobileNavFontSize: 1.6em;
+$mobileNavLineHeight: 2.2em;
+
 .name {
   z-index: 100;
   font-weight: normal;
@@ -35,14 +38,14 @@ nav {
   padding-left: 40px;
 
   @include breakpoint(big-phone) {
-    padding: 0 1em;
-    margin: 5px 0;
+    padding-left: 1em;
+    margin: 0;
     float: left;
   }
 
   @include breakpoint(small-phone) {
-    font-size: 1.4em;
-    line-height: 2em;
+    font-size: $mobileNavFontSize;
+    line-height: $mobileNavLineHeight;
   }
 }
 
@@ -51,9 +54,10 @@ nav {
   color: white;
   display: none;
   float: right;
-  margin: 0 0 0 .9em;
-  padding: .75em .8em;
-  font-size: 1.4em;
+  margin: 0;
+  padding-right: .5em;
+  font-size: $mobileNavFontSize;
+  line-height: $mobileNavLineHeight;
 
   &:hover {
     text-decoration: none;
@@ -81,7 +85,7 @@ nav {
     }
 
     @include breakpoint(small-phone) {
-      margin: .85em 1.2em;
+      // margin: .85em 1.2em;
     }
   }
 
@@ -90,7 +94,7 @@ nav {
     margin: 0;
     position: absolute;
     right: 0;
-    top: 2.3em;
+    top: 1.9em;
   }
 }
 
