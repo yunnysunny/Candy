@@ -80,10 +80,6 @@ $mobileNavLineHeight: 2.2em;
       padding: 0;
       margin: .55em .9em;
     }
-
-    @include breakpoint(small-phone) {
-      // margin: .85em 1.2em;
-    }
   }
 
   @include breakpoint(big-phone) {
@@ -91,7 +87,7 @@ $mobileNavLineHeight: 2.2em;
     margin: 0;
     position: absolute;
     right: 0;
-    top: 1.9em;
+    top: 2.5em;
   }
 }
 
