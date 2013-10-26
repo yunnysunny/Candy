@@ -1157,7 +1157,7 @@ nav a:hover {
 /* line 1, ../../src/styles/_post.scss */
 .post-head {
   border-bottom: 1px solid #b8b7b7;
-  margin-bottom: 1em;
+  margin: 2em 0;
   padding-bottom: 5px;
   position: relative;
 }
