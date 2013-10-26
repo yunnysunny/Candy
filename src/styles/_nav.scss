@@ -41,9 +41,6 @@ $mobileNavLineHeight: 2.2em;
     padding-left: 1em;
     margin: 0;
     float: left;
-  }
-
-  @include breakpoint(small-phone) {
     font-size: $mobileNavFontSize;
     line-height: $mobileNavLineHeight;
   }
