@@ -89,19 +89,3 @@ body {
 .newer {
   float: right;
 }
-
-.cabin {
-  position: fixed;
-  right: .55em;
-  bottom: .3em;
-  width: 2em;
-  @include opacity(.3);
-
-  &:hover {
-    @include opacity(.6);
-  }
-
-  @include breakpoint(big-phone) {
-    display: none;
-  }
-}
