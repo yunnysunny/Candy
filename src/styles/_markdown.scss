@@ -64,14 +64,14 @@ code {
 }
 
 .markdown > pre {
-  white-space: normal;
   font-family: $codeFont;
-  overflow: auto;
   margin: 1em 0;
 
   pre {
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
     margin: 0;
-
+    overflow: auto;
   }
 
   code {
