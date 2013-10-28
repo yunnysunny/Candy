@@ -28,6 +28,7 @@
 ## Code block with syntax highlighting
 ```javascript
 console.log('I am a string');
+var MyBackboneView = Backbone.View.extend({});
 ```
 ## Inline code
 Here is some `inline code`
