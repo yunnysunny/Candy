@@ -28,6 +28,10 @@
 
     &:hover .header-link {
       visibility: visible;
+
+      @include breakpoint(big-phone) {
+        visibility: hidden;
+      }
     }
   }
 
