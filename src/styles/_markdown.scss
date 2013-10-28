@@ -55,7 +55,6 @@
   }
 }
 
-
 code {
   background: hsl(240, 100%, 96%);
   border: 1px solid hsl(0, 0%, 90%);
@@ -70,6 +69,7 @@ code {
 .markdown > pre {
   font-family: $codeFont;
   margin: 1em 0;
+  white-space: normal;
 
   pre {
     white-space: pre;
