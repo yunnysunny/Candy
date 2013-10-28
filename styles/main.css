@@ -814,7 +814,7 @@ body {
 @media (max-width: 630px) {
   /* line 49, ../../src/styles/_base.scss */
   .content {
-    margin: 45px auto 15px;
+    margin: 50px auto 15px;
   }
 }
 
@@ -826,7 +826,7 @@ body {
 .pagination a {
   font-size: 1.5em;
   font-weight: bold;
-  padding: 2.2em 0 1.8em;
+  padding: .7em 0;
   text-decoration: none;
 }
 
@@ -871,33 +871,40 @@ body {
 .markdown h4:hover .header-link, .markdown h5:hover .header-link, .markdown h6:hover .header-link {
   visibility: visible;
 }
-/* line 34, ../../src/styles/_markdown.scss */
+@media (max-width: 1250px) {
+  /* line 29, ../../src/styles/_markdown.scss */
+  .markdown h1:hover .header-link, .markdown h2:hover .header-link, .markdown h3:hover .header-link,
+  .markdown h4:hover .header-link, .markdown h5:hover .header-link, .markdown h6:hover .header-link {
+    visibility: hidden;
+  }
+}
+/* line 38, ../../src/styles/_markdown.scss */
 .markdown blockquote {
   border-left: 6px solid gainsboro;
   margin-left: 0;
   padding-left: 1em;
 }
 
-/* line 41, ../../src/styles/_markdown.scss */
+/* line 45, ../../src/styles/_markdown.scss */
 .header-link {
   margin-left: -1.7em;
   visibility: hidden;
   font-size: 16px;
 }
 @media (max-width: 1250px) {
-  /* line 41, ../../src/styles/_markdown.scss */
+  /* line 45, ../../src/styles/_markdown.scss */
   .header-link {
     font-size: 14px;
   }
 }
 @media (max-width: 630px) {
-  /* line 41, ../../src/styles/_markdown.scss */
+  /* line 45, ../../src/styles/_markdown.scss */
   .header-link {
     font-size: 12px;
   }
 }
 
-/* line 55, ../../src/styles/_markdown.scss */
+/* line 58, ../../src/styles/_markdown.scss */
 code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -913,24 +920,26 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 66, ../../src/styles/_markdown.scss */
+/* line 69, ../../src/styles/_markdown.scss */
 .markdown > pre {
-  white-space: normal;
   font-family: Monaco, Consolas, monospace;
-  overflow: auto;
   margin: 1em 0;
+  white-space: normal;
 }
-/* line 72, ../../src/styles/_markdown.scss */
+/* line 74, ../../src/styles/_markdown.scss */
 .markdown > pre pre {
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
   margin: 0;
+  overflow: auto;
 }
-/* line 77, ../../src/styles/_markdown.scss */
+/* line 81, ../../src/styles/_markdown.scss */
 .markdown > pre code {
   border: 0;
   padding: 0;
 }
 
-/* line 83, ../../src/styles/_markdown.scss */
+/* line 87, ../../src/styles/_markdown.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -938,7 +947,7 @@ code {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 86, ../../src/styles/_markdown.scss */
+/* line 90, ../../src/styles/_markdown.scss */
 .highlight pre {
   padding: 15px;
   margin-bottom: 0;
@@ -1157,7 +1166,7 @@ nav a:hover {
 /* line 1, ../../src/styles/_post.scss */
 .post-head {
   border-bottom: 1px solid #b8b7b7;
-  margin: 2em 0;
+  margin: 1em 0;
   padding-bottom: 5px;
   position: relative;
 }
@@ -1170,43 +1179,50 @@ nav a:hover {
 .post-title {
   float: left;
   padding-right: 4.9em;
-  margin: 5px 0;
-  font-size: 1.7em;
+  margin: 0 0 5px;
+  font-size: 2em;
+}
+@media (max-width: 1250px) {
+  /* line 12, ../../src/styles/_post.scss */
+  .post-title {
+    font-size: 1.7em;
+  }
 }
 
-/* line 19, ../../src/styles/_post.scss */
+/* line 23, ../../src/styles/_post.scss */
 .post-date {
   position: absolute;
   bottom: 10px;
   right: 0;
   font-size: 1.3em;
+  line-height: 1.7em;
   color: #b8b7b7;
 }
 
-/* line 27, ../../src/styles/_post.scss */
+/* line 32, ../../src/styles/_post.scss */
 .post-body {
   margin-bottom: 1.2em;
   font-family: "Merriweather", serif;
   line-height: 1.65em;
 }
 
-/* line 34, ../../src/styles/_post.scss */
+/* line 38, ../../src/styles/_post.scss */
 .social {
   padding: .55em 0 1.4em;
 }
 
-/* line 38, ../../src/styles/_post.scss */
+/* line 42, ../../src/styles/_post.scss */
 .comments {
-  margin-top: 25px;
+  margin-top: 1em;
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 43, ../../src/styles/_post.scss */
+/* line 47, ../../src/styles/_post.scss */
 .comments a {
   color: #b8b7b7;
   text-decoration: none;
 }
-/* line 48, ../../src/styles/_post.scss */
+/* line 52, ../../src/styles/_post.scss */
 .comments .icon-bubbles {
   padding: 3px 15px 5px 0;
   float: left;
