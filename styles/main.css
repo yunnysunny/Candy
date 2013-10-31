@@ -904,7 +904,7 @@ body {
   }
 }
 
-/* line 58, ../../src/styles/_markdown.scss */
+/* line 59, ../../src/styles/_markdown.scss */
 code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -920,26 +920,26 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 69, ../../src/styles/_markdown.scss */
+/* line 70, ../../src/styles/_markdown.scss */
 .markdown > pre {
   font-family: Monaco, Consolas, monospace;
   margin: 1em 0;
   white-space: normal;
 }
-/* line 74, ../../src/styles/_markdown.scss */
+/* line 75, ../../src/styles/_markdown.scss */
 .markdown > pre pre {
   white-space: pre;
   -webkit-overflow-scrolling: touch;
   margin: 0;
   overflow: auto;
 }
-/* line 81, ../../src/styles/_markdown.scss */
+/* line 82, ../../src/styles/_markdown.scss */
 .markdown > pre code {
   border: 0;
   padding: 0;
 }
 
-/* line 87, ../../src/styles/_markdown.scss */
+/* line 88, ../../src/styles/_markdown.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -947,7 +947,7 @@ code {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 90, ../../src/styles/_markdown.scss */
+/* line 91, ../../src/styles/_markdown.scss */
 .highlight pre {
   padding: 15px;
   margin-bottom: 0;
@@ -957,25 +957,22 @@ code {
 /*License:  CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/*/
 /*
 Note: To edit icons, go to the following url: http://icomoon.io/app/
-      Then click the stacked circle icon in the bottom right and upload the IcoMoon Session.json file from this folder
-      After updating the icons, download them and copy the fonts folder and the style.css into this folder and rename style.css to _icons.scss
+      then click `Import Icons` in the top left and upload the `src/styles/selection.json` file.
+
+      After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder,
+      replace the `src/styles/selection.json` with the new `selection.json` and replace the contents of
+      `src/styles/_icon.scss` with `style.css`.
 */
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot");
-  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-/* line 27, ../../src/styles/_icons.scss */
-.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus, .icon-bubbles, .icon-link, .header-link {
+/* line 23, ../../src/styles/_icons.scss */
+[class*="icon-"], .header-link {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -983,52 +980,79 @@ you can use the generic selector below, but it's slower:
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 37, ../../src/styles/_icons.scss */
-.icon-pinterest:before {
-  content: "\e000";
+.icon-link:before, .header-link:before {
+  content: "\e600";
 }
 
 /* line 40, ../../src/styles/_icons.scss */
-.icon-github:before {
-  content: "\e001";
+.icon-twitter:before {
+  content: "\e601";
 }
 
 /* line 43, ../../src/styles/_icons.scss */
-.icon-twitter:before {
-  content: "\e002";
+.icon-google-plus:before {
+  content: "\e602";
 }
 
 /* line 46, ../../src/styles/_icons.scss */
-.icon-menu:before {
-  content: "\e003";
+.icon-facebook:before {
+  content: "\e603";
 }
 
 /* line 49, ../../src/styles/_icons.scss */
-.icon-dribbble:before {
-  content: "\e004";
+.icon-github:before {
+  content: "\e604";
 }
 
 /* line 52, ../../src/styles/_icons.scss */
-.icon-facebook:before {
-  content: "\e005";
+.icon-pinterest:before {
+  content: "\e605";
 }
 
 /* line 55, ../../src/styles/_icons.scss */
-.icon-google-plus:before {
-  content: "\e006";
+.icon-dribbble:before {
+  content: "\e606";
 }
 
 /* line 58, ../../src/styles/_icons.scss */
-.icon-bubbles:before {
-  content: "\e007";
+.icon-menu:before {
+  content: "\e607";
 }
 
 /* line 61, ../../src/styles/_icons.scss */
-.icon-link:before, .header-link:before {
-  content: "\e008";
+.icon-bubbles:before {
+  content: "\e608";
+}
+
+/* line 64, ../../src/styles/_icons.scss */
+.icon-soundcloud:before {
+  content: "\e609";
+}
+
+/* line 67, ../../src/styles/_icons.scss */
+.icon-skype:before {
+  content: "\e60a";
+}
+
+/* line 70, ../../src/styles/_icons.scss */
+.icon-lastfm:before {
+  content: "\e60b";
+}
+
+/* line 73, ../../src/styles/_icons.scss */
+.icon-foursquare:before {
+  content: "\e60c";
+}
+
+/* line 76, ../../src/styles/_icons.scss */
+.icon-tumblr:before {
+  content: "\e60d";
 }
 
 /* line 1, ../../src/styles/_nav.scss */
