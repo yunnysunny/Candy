@@ -44,15 +44,15 @@ There are parts of the Candy theme which you are expected to edit when building 
 
 #### Layouts
 
-You are expected to add your name to the nav home link in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L24) or [`src/layouts/_header.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L20) file.You are also expected to update the social media links with your GitHub username and Twitter handle in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L35-L36) or [`src/layouts/_header.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_header.ejs#L35-L36) file. 
+You are expected to replace `My Name` with your name in the `src/layouts/base.jade` or `src/layouts/_header.ejs` file. You are also expected to replace `username` in the GitHub and Twitter social media links with your username in the `src/layouts/base.jade` or `src/layouts/_header.ejs` file. 
 
-We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the icon font classes in the [`src/styles/_icon.scss`](https://github.com/CabinJS/Candy/blob/master/src/styles/_icons.scss#L27) file, and here is an example of how you would add a link to your Pinterest profile:
+We have also provided social media icons for Google+, Facebook, and Pinterest which you can use out of the box. You can see all the social media icon font classes in the `src/styles/_icon.scss` file, and here is an example of how you would add a link to your Google Plus profile:
 
 ```html
-<a href="http://pinterest.com/chrisawren/" class="icon-pinterest"></a>
+<a href="http://plus.google.com/username/" class="icon-google-plus"></a>
 ```
 
-To get [Disqus](http://disqus.com/) setup, you must add your Disqus username to the [`src/layouts/_social.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_social.jade#L35) or [`src/layouts/_social.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_social.ejs#L39) file. There are also placeholder comments for Google Analytics scripts in the [`src/layouts/base.jade`](https://github.com/CabinJS/Candy/blob/master/src/layouts/base.jade#L45) and [`src/layouts/_footer.ejs`](https://github.com/CabinJS/Candy/blob/master/src/layouts/_footer.ejs#L8) files.
+To get [Disqus](http://disqus.com/) setup, you must replace `username` with your Disqus username in the `src/layouts/_social.jade` or `src/layouts/_social.ejs` file. There are also placeholder comments for Google Analytics scripts in the `src/layouts/base.jade` and `src/layouts/_footer.ejs` files. Just replace `// Add your analytics code here` with your analytics code.
 
 #### Pages
 
@@ -64,7 +64,7 @@ You are expected to edit the default posts and add your own metadata and content
 
 ### Authoring Posts
 
-Candy generates pages using markdown posts in the `posts` folder. It expects markdown posts to contain two required metadata properties:
+Candy generates pages using [markdown](daringfireball.net/projects/markdown/) posts in the `posts` folder. It expects markdown posts to contain two metadata properties:
 
 #### title
 Type: `String`
@@ -109,7 +109,7 @@ grunt.registerTask('deploy', ['build:deploy', 'yourChosenDeployTask']);
 
 ### Changing the main theme color
 
-We provide a number of theme colors out of the box in the [`src/styles/_base.scss`](https://github.com/CabinJS/Candy/blob/master/src/styles/_base.scss#L1-L5) file. To change the color, simply change the value of the `$mainTheme` Sass variable.
+We provide a number of theme colors out of the box in the `src/styles/_base.scss` file. To change the color, simply change the value of the `$mainTheme` Sass variable.
 
 ### Included libraries/tools
 
