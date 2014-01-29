@@ -21,8 +21,8 @@ describe('Candy theme', function () {
   });
 
   after(function () {
-    // wrench.rmdirSyncRecursive(EJSSiteName);
-    // wrench.rmdirSyncRecursive(JadeSiteName);
+    wrench.rmdirSyncRecursive(EJSSiteName);
+    wrench.rmdirSyncRecursive(JadeSiteName);
   });
 
   // To speed up testing in development, copy the node_modules from the theme
@@ -39,7 +39,8 @@ describe('Candy theme', function () {
       }
 
       var gruntBuildProcess = spawn('grunt', ['build'], {
-        cwd: EJSSiteName
+        cwd: EJSSiteName,
+        stdio: 'inherit'
       });
 
       gruntBuildProcess.on('close', function () {
@@ -58,7 +59,8 @@ describe('Candy theme', function () {
         wrench.copyDirSyncRecursive('node_modules', JadeSiteName + '/node_modules');
       }
       var gruntBuildProcess = spawn('grunt', ['build'], {
-        cwd: JadeSiteName
+        cwd: JadeSiteName,
+        stdio: 'inherit'
       });
 
       gruntBuildProcess.on('close', function () {
