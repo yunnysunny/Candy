@@ -96,7 +96,8 @@ module.exports = function (grunt) {
     },
     clean: {
       dist: 'dist',
-      engine: '.engineDiff'
+      cache: '.grunt/grunt-pages',
+      test: ['.engineDiff', 'testEJSSite', 'testJadeSite']
     },
     'gh-pages': {
       options: {

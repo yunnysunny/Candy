@@ -21,8 +21,8 @@ describe('Candy theme', function () {
   });
 
   after(function () {
-    wrench.rmdirSyncRecursive(EJSSiteName);
-    wrench.rmdirSyncRecursive(JadeSiteName);
+    // wrench.rmdirSyncRecursive(EJSSiteName);
+    // wrench.rmdirSyncRecursive(JadeSiteName);
   });
 
   // To speed up testing in development, copy the node_modules from the theme
