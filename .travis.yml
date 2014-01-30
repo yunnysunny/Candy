@@ -5,6 +5,7 @@ node_js:
 before_script:
   - gem update --system
   - gem install compass
+  - gem install sass
   - npm install -g grunt-cli
 notifications:
   email: false
